@@ -7,7 +7,7 @@ const Favorite = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/');
+    navigate('/login');
   };
 
   return (
@@ -24,7 +24,7 @@ const Favorite = () => {
         안녕하세요 <span style={{ color: '#e6007e' }}>Cok-co </span>입니다.
       </Text>
       <Text fontSize="xxx-large">Favorite</Text> */}
-      <div>Favorite</div>
+      <button onClick={handleClick}>Favorite</button>
       {/* <Button onClick={handleClick}>Cok-co로 돌아가기</Button> */}
     </div>
   );

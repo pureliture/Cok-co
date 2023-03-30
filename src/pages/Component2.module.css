@@ -1,0 +1,218 @@
+.icon {
+  left: 15.06rem;
+  width: 7.44rem;
+}
+.icon,
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  top: 43.63rem;
+  height: 7.44rem;
+  object-fit: cover;
+}
+.icon1 {
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon2,
+.icon3 {
+  left: 0;
+  width: 7.44rem;
+}
+.icon3 {
+  top: 36.06rem;
+}
+.icon4 {
+  top: 36.06rem;
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+  position: absolute;
+  height: 7.44rem;
+  object-fit: cover;
+}
+.icon5 {
+  top: 36.06rem;
+  left: 15.06rem;
+  width: 7.44rem;
+}
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+  top: 28.5rem;
+}
+.icon6 {
+  left: 0;
+  width: 7.44rem;
+}
+.icon7,
+.icon8,
+.icon9 {
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon8,
+.icon9 {
+  left: 15.06rem;
+  width: 7.44rem;
+}
+.icon9 {
+  top: 20.94rem;
+}
+.icon10 {
+  top: 20.94rem;
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon10,
+.icon11,
+.icon12,
+.icon13,
+.icon14 {
+  position: absolute;
+  height: 7.44rem;
+  object-fit: cover;
+}
+.icon11 {
+  top: 20.94rem;
+  left: 0;
+  width: 7.44rem;
+}
+.icon12,
+.icon13,
+.icon14 {
+  top: 13.38rem;
+}
+.icon12 {
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon13,
+.icon14 {
+  width: 7.44rem;
+}
+.icon13 {
+  left: 0;
+}
+.icon14 {
+  left: 15.06rem;
+}
+.child,
+.inner,
+.item,
+.rectangleDiv {
+  position: absolute;
+  top: 13.38rem;
+  left: 16.25rem;
+  background: linear-gradient(228.37deg, #000, transparent);
+  width: 6.25rem;
+  height: 6.25rem;
+  opacity: 0.8;
+}
+.inner,
+.item,
+.rectangleDiv {
+  top: 28.5rem;
+  left: 1.19rem;
+}
+.inner,
+.rectangleDiv {
+  top: 36.06rem;
+  left: 8.69rem;
+}
+.rectangleDiv {
+  left: 16.25rem;
+}
+.child1,
+.child2,
+.child3,
+.vectorIcon {
+  position: absolute;
+  top: 29.07rem;
+  left: 6.22rem;
+  width: 0.84rem;
+  height: 0.98rem;
+}
+.child1,
+.child2,
+.child3 {
+  top: 13.95rem;
+  left: 21.28rem;
+}
+.child2,
+.child3 {
+  top: 36.63rem;
+  left: 13.72rem;
+}
+.child3 {
+  left: 21.28rem;
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--label-color-dark-primary);
+  width: 22.5rem;
+  height: 5.63rem;
+}
+.icArrowIcon {
+  position: absolute;
+  top: 2.88rem;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.div1 {
+  position: absolute;
+  top: 2.69rem;
+  left: 6.44rem;
+  line-height: 1.88rem;
+  font-weight: 500;
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.5rem;
+  height: 5.63rem;
+}
+.icon15 {
+  left: 15.06rem;
+  width: 7.44rem;
+}
+.icon15,
+.icon16,
+.icon17 {
+  position: absolute;
+  top: 5.81rem;
+  height: 7.44rem;
+  object-fit: cover;
+}
+.icon16 {
+  left: 7.56rem;
+  width: 7.38rem;
+}
+.icon17 {
+  left: 0;
+  width: 7.44rem;
+}
+.div {
+  position: relative;
+  background-color: var(--label-color-dark-primary);
+  width: 100%;
+  height: 46.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans);
+}

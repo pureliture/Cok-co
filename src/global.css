@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-noto-sans: "Noto Sans";
+  --components-button-large: Roboto;
+  --font-baloo-bhai: "Baloo Bhai";
+
+  /* font sizes */
+  --components-button-large-size: 0.94rem;
+  --font-size-sm: 0.88rem;
+  --font-size-base: 1rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-mid: 1.06rem;
+  --font-size-xs: 0.75rem;
+  --font-size-3xs: 0.63rem;
+  --font-size-xl: 1.25rem;
+  --font-size-sm-5: 0.84rem;
+  --font-size-3xl-4: 1.4rem;
+  --font-size-xs-2: 0.7rem;
+  --font-size-base-5: 1.03rem;
+  --font-size-4xl-9: 1.49rem;
+  --font-size-9xl-4: 1.78rem;
+  --font-size-2xs-5: 0.66rem;
+  --font-size-mid-9: 1.12rem;
+  --font-size-3xs-7: 0.61rem;
+  --font-size-4xs: 0.56rem;
+
+  /* Colors */
+  --label-color-dark-primary: #fff;
+  --color-gray-100: #8e8e94;
+  --color-gray-200: #828282;
+  --color-gray-300: rgba(0, 0, 0, 0.87);
+  --color-gray-400: rgba(0, 0, 0, 0.6);
+  --color-darkslategray-100: #424242;
+  --color-darkslategray-200: #303030;
+  --color-black: #000;
+  --color-whitesmoke-100: #f5f5f5;
+  --color-whitesmoke-200: #ebebeb;
+  --color-whitesmoke-300: #eaeaea;
+  --color-linen-100: #f3f1e9;
+  --color-linen-200: rgba(243, 241, 233, 0.3);
+  --color-dimgray-100: #616161;
+  --color-dimgray-200: #595959;
+  --color-silver-100: #c3c3c3;
+  --color-silver-200: #bdbdbd;
+  --color-darkgray-100: #b3b3b3;
+  --color-darkgray-200: #999;
+  --color-antiquewhite: #d8d1b5;
+  --color-gainsboro-100: #e0e0e0;
+  --color-gainsboro-200: #d9d9d9;
+  --color-gainsboro-300: #d1dfce;
+  --color-gainsboro-400: #cedadf;
+  --color-gainsboro-500: rgba(226, 226, 226, 0.1);
+  --color-thistle: #dfcedd;
+  --color-lightgray-100: #dfd3ce;
+  --color-orange: #f99a0e;
+  --color-cornflowerblue-100: #1262af;
+  --color-cornflowerblue-200: #1262ae;
+  --color-lavender: #ccdcec;
+
+  /* Gaps */
+  --gap-5xs-2: 0.45rem;
+  --gap-7xs: 0.38rem;
+  --gap-3xs: 0.63rem;
+  --gap-3xl-4: 1.4rem;
+  --gap-5xs-5: 0.47rem;
+  --gap-mini: 0.94rem;
+  --gap-mid-2: 1.08rem;
+  --gap-4xs-2: 0.51rem;
+  --gap-8xs-5: 0.28rem;
+  --gap-mid-9: 1.12rem;
+  --gap-10xs-2: 0.14rem;
+  --gap-7xl-9: 1.68rem;
+
+  /* Paddings */
+  --padding-11xs: 0.13rem;
+  --padding-3xs: 0.63rem;
+  --padding-7xs: 0.38rem;
+  --padding-5xs: 0.5rem;
+  --padding-xl: 1.25rem;
+  --padding-21xl: 2.5rem;
+  --padding-5xl: 1.5rem;
+  --padding-11xl: 1.88rem;
+  --padding-mini: 0.94rem;
+  --padding-40xl-8: 3.74rem;
+  --padding-4xs: 0.56rem;
+  --padding-xs-2: 0.7rem;
+  --padding-3xs-7: 0.61rem;
+  --padding-xs: 0.75rem;
+  --padding-base: 1rem;
+  --padding-9xs-7: 0.23rem;
+  --padding-10xs: 0.19rem;
+  --padding-10xs-2: 0.14rem;
+  --padding-8xs-5: 0.28rem;
+
+  /* border radiuses */
+  --br-3xs: 10px;
+  --br-10xs: 3px;
+  --br-4xl-2: 23.2px;
+  --br-5xs-5: 7.5px;
+  --br-xs: 12px;
+  --br-28xl-8: 47.8px;
+}

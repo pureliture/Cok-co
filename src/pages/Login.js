@@ -24,7 +24,7 @@ const Login = () => {
         안녕하세요 <span style={{ color: '#e6007e' }}>Cok-co </span>입니다.
       </Text>
       <Text fontSize="xxx-large">Login</Text> */}
-      <div>Lgoin</div>
+      <button onClick={handleClick}>Login</button>
       {/* <Button onClick={handleClick}>Cok-co로 돌아가기</Button> */}
     </div>
   );

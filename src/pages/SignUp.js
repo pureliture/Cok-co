@@ -7,7 +7,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/');
+    navigate('/favorite');
   };
 
   return (
@@ -25,7 +25,7 @@ const SignUp = () => {
       </Text>
       
       <Text fontSize="xxx-large">SignUp</Text> */}
-      <div>SignUp</div>
+      <button onClick={handleClick}>SignUp</button>
       {/* <Button onClick={handleClick}>Cok-co로 돌아가기</Button> */}
     </div>
   );

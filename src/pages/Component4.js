@@ -1,6 +1,6 @@
-import styles from "./Room.module.css";
+import styles from "./Component4.module.css";
 
-const Room = () => {
+const Component4 = () => {
   return (
     <div className={styles.div}>
       <div className={styles.child} />
@@ -26,12 +26,11 @@ const Room = () => {
       <img
         className={styles.icHomeDefaultIcon}
         alt=""
-        src="/ic-home-default2.svg"
+        src="/ic-home-default1.svg"
       />
       <div className={styles.child1} />
       <div className={styles.child2} />
       <div className={styles.child3} />
-      <div className={styles.child4} />
       <img
         className={styles.icCalenderDefaultIcon}
         alt=""
@@ -50,7 +49,7 @@ const Room = () => {
         </div>
       </div>
       <div className={styles.div7}>324,000 ~ 568,000</div>
-      <div className={styles.child5} />
+      <div className={styles.child4} />
       <img className={styles.unionIcon} alt="" src="/union.svg" />
       <div className={styles.wrapper}>
         <div className={styles.architectContainer}>
@@ -87,9 +86,9 @@ const Room = () => {
         </div>
       </div>
       <div className={styles.div9}>142개 리뷰보기</div>
-      <img className={styles.child6} alt="" src="/group-47.svg" />
+      <img className={styles.child5} alt="" src="/group-47.svg" />
+      <div className={styles.child6} />
       <div className={styles.child7} />
-      <div className={styles.child8} />
       <div className={styles.container}>
         <div className={styles.div10}>문의하기</div>
         <img
@@ -108,17 +107,20 @@ const Room = () => {
         <div className={styles.open}>4명</div>
       </div>
       <div className={styles.openWrapper}>
-        <div className={styles.open}>4월 20일 오후 9:00 open</div>
+        <div className={styles.open}>5월 20일 오후 9:00 open</div>
       </div>
       <div className={styles.frame}>
         <div className={styles.div14}>
-          5월 1일 ~ 31일까지 예약이 가능합니다.
+          6월 1일 ~ 31일까지 예약이 가능합니다.
         </div>
       </div>
       <img className={styles.icArrowIcon1} alt="" src="/ic-arrow2.svg" />
-      <div className={styles.div15}>예약 오픈 전입니다</div>
-      <div className={styles.div16}>예약 오픈 알림 받기</div>
-      <img className={styles.child9} alt="" src="/group-172.svg" />
+      <div className={styles.div15}>예약 오픈 알림 받기</div>
+      <div className={styles.rectangleParent}>
+        <div className={styles.groupItem} />
+        <div className={styles.div16}>예약하기</div>
+      </div>
+      <img className={styles.child8} alt="" src="/group-171.svg" />
       <img className={styles.ellipseIcon} alt="" src="/ellipse-38.svg" />
       <div className={styles.groupParent}>
         <div className={styles.parent1}>
@@ -129,8 +131,8 @@ const Room = () => {
             <div className={styles.div20}>142개</div>
           </div>
         </div>
-        <img className={styles.groupItem} alt="" src="/vector-4.svg" />
-        <img className={styles.groupInner} alt="" src="/vector-31.svg" />
+        <img className={styles.groupInner} alt="" src="/vector-4.svg" />
+        <img className={styles.vectorIcon} alt="" src="/vector-31.svg" />
       </div>
       <div className={styles.parent3}>
         <img className={styles.icon2} alt="" src="/-20230328--907-1@2x.png" />
@@ -186,17 +188,23 @@ const Room = () => {
             <p className={styles.p}>소박한 적정온도만의 감성을 확인해보세요.</p>
           </div>
         </div>
-        <img className={styles.vectorIcon} alt="" src="/vector-13.svg" />
+        <img className={styles.groupChild1} alt="" src="/vector-13.svg" />
       </div>
       <img className={styles.maskGroupIcon} alt="" src="/mask-group@2x.png" />
       <img className={styles.image11Icon} alt="" src="/image-11@2x.png" />
       <img className={styles.image12Icon} alt="" src="/image-12@2x.png" />
-      <div className={styles.rectangleParent}>
-        <div className={styles.groupChild1} />
+      <div className={styles.rectangleGroup}>
+        <div className={styles.groupChild2} />
         <div className={styles.div30}>예약하기</div>
+      </div>
+      <div className={styles.frameGroup}>
+        <div className={styles.wrapper2}>
+          <div className={styles.div31}>지금 바로예약 하세요!</div>
+        </div>
+        <img className={styles.groupChild3} alt="" src="/vector-131.svg" />
       </div>
     </div>
   );
 };
 
-export default Room;
+export default Component4;

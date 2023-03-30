@@ -1,3 +1,4 @@
+import Calendar from 'pages/Calendar';
 import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { Spin } from 'antd';
@@ -30,16 +31,17 @@ const App = () => {
         }
       >
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/favorite" element={<Favorite />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/mypage" element={<MyPage />}></Route>
-          <Route
-            path="/room/:roomNo"
-            element={<Room />}
-          ></Route>
-          <Route path="/signup" element={<SignUp />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/favorite" element={<Favorite />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/mypage" element={<MyPage />}></Route>
+            <Route
+              path="/room/:roomNo"
+              element={<Room />}
+            ></Route>
+            <Route path="/signup" element={<SignUp />}></Route>
+            <Route path="/calendar" element={<Calendar />}></Route>
+            <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </Suspense>
     </BrowserRouter>
