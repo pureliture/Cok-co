@@ -1,4 +1,4 @@
-import styles from "./Component1.module.css";
+import styles from "./Calendar.module.css";
 
 // Component1
 const Calendar = () => {
