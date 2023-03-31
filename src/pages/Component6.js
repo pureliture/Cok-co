@@ -1,70 +1,10 @@
-import BestRoom from 'Component/BestRoom';
-import Carousel from 'Component/Carousel';
-import CustomTab from 'Component/CustomTab';
-import Empty from 'Component/Empty';
-import Expert from 'Component/Expert';
-import Nav from 'Component/Nav';
 import React from 'react';
-import styles from './Home.module.css';
+import styles from './Component6.module.css';
 
-const Home = () => {
+const Component6 = () => {
   return (
-    // <div className={styles.div}>
-    <div
-      style={{
-        border: '1px solid red',
-        width: '360px',
-        minHeight: '740px',
-        margin: '0 auto',
-      }}
-    >
-      <Carousel></Carousel>
-      <div className={styles.div2}>
-        <p className={styles.p}>유플님의 취향을</p>
-        <p className={styles.p}>모아봤어요</p>
-      </div>
-      <div className={styles.div7}>당신이 잠들고 싶은 숙소를 콕!</div>
-      <CustomTab></CustomTab>
-      <div style={{ textAlign: 'center' }}>
-        <button
-          style={{
-            border: '1px solid #ebebeb',
-            backgroundColor: 'transparent',
-            width: '320px',
-            height: '44px',
-          }}
-        >
-          취향숙소 전체보기
-        </button>
-      </div>
-      <Empty></Empty>
-      <Expert></Expert>
-      <div className={styles.best}>
-        <p className={styles.p}>콕코러들의</p>
-        <p className={styles.p}>Best 숙소</p>
-      </div>
-      <div className={styles.best2}>오늘의 Best 숙소에요</div>
-      <BestRoom src="/image 164.png"></BestRoom>
-      <BestRoom src="/image 163.png"></BestRoom>
-      <BestRoom src="/image 165.png"></BestRoom>
-      <div style={{ textAlign: 'center' }}>
-        <button
-          style={{
-            border: '1px solid #ebebeb',
-            backgroundColor: 'transparent',
-            width: '320px',
-            height: '44px',
-          }}
-        >
-          Best숙소 전체보기
-        </button>
-      </div>
-      <Empty></Empty>
-      <div style={{ width: '360px', height: '86px' }}></div>
-      {/* TODO: Nav 위치 옮겨야함 */}
-      <Nav></Nav>
-      {/* <img 
-      {/* <img className={styles.icon} alt="" src="/-20230328--752-1@2x.png" />
+    <div className={styles.div}>
+      <img className={styles.icon} alt="" src="/-20230328--752-1@2x.png" />
       <img className={styles.icon1} alt="" src="/-20230328--747-1@2x.png" />
       <img className={styles.icon2} alt="" src="/-20230328--743-1@2x.png" />
       <div className={styles.child} />
@@ -289,9 +229,9 @@ const Home = () => {
       <div className={styles.rectangleParent3}>
         <div className={styles.groupChild9} />
         <div className={styles.div48}>3</div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
-export default Home;
+export default Component6;

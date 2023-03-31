@@ -1,4 +1,5 @@
-import styles from "./Calendar.module.css";
+import React from 'react';
+import styles from './Calendar.module.css';
 
 // Component1
 const Calendar = () => {

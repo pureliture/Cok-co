@@ -1,7 +1,7 @@
 .icon,
 .icon1,
 .icon2 {
-  /* position: absolute; */
+  position: absolute;
   top: 190.19rem;
   left: 1.25rem;
   width: 9.69rem;
@@ -24,7 +24,7 @@
 .child,
 .div1,
 .groupChild {
-  /* position: absolute; */
+  position: absolute;
   left: 0;
 }
 .div1 {
@@ -38,7 +38,7 @@
   height: 0.03rem;
 }
 .parent {
-  /* position: absolute; */
+  position: absolute;
   top: 134.31rem;
   left: 17.38rem;
   width: 2.63rem;
@@ -56,7 +56,7 @@
 .icon3,
 .icon4,
 .item {
-  /* position: absolute; */
+  position: absolute;
 }
 .icon3 {
   top: 70.94rem;
@@ -77,7 +77,7 @@
   object-fit: cover;
 }
 .icon5 {
-  /* position: absolute; */
+  position: absolute;
   top: 42.06rem;
   left: 0;
   width: 14.38rem;
@@ -89,7 +89,7 @@
 .group,
 .icon6,
 .icon7 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 22.5rem;
@@ -115,7 +115,7 @@
 .div4,
 .div5,
 .div6 {
-  /* position: absolute; */
+  position: absolute;
   left: 1.25rem;
   font-size: var(--font-size-3xl);
   line-height: 2rem;
@@ -152,7 +152,7 @@
 .div7,
 .div8,
 .div9 {
-  /* position: absolute; */
+  position: absolute;
   top: 31.25rem;
   left: 1.25rem;
   line-height: 1.25rem;
@@ -188,7 +188,7 @@
 .div15,
 .div16,
 .div17 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.69rem;
   line-height: 1.5rem;
 }
@@ -225,7 +225,7 @@
 .groupInner,
 .groupItem,
 .vectorIcon {
-  /* position: absolute; */
+  position: absolute;
   top: -0.03rem;
   left: 0;
   width: 21.25rem;
@@ -239,7 +239,7 @@
   width: 1.75rem;
 }
 .container {
-  /* position: absolute; */
+  position: absolute;
   top: 34.38rem;
   left: 4.75rem;
   width: 21.25rem;
@@ -247,7 +247,7 @@
   font-size: var(--font-size-base);
 }
 .inner {
-  /* position: absolute; */
+  position: absolute;
   top: 34.75rem;
   left: 1.25rem;
   width: 2.25rem;
@@ -299,7 +299,7 @@
 .frameContainer,
 .frameGroup,
 .frameParent {
-  /* position: absolute; */
+  position: absolute;
   top: 61.94rem;
   left: 1.25rem;
   align-items: center;
@@ -314,7 +314,7 @@
   top: 90.81rem;
 }
 .icon8 {
-  /* position: absolute; */
+  position: absolute;
   top: 46.81rem;
   left: 15rem;
   width: 6.25rem;
@@ -323,7 +323,7 @@
 }
 .div28,
 .div29 {
-  /* position: absolute; */
+  position: absolute;
   color: var(--label-color-dark-primary);
 }
 .div28 {
@@ -341,7 +341,7 @@
 }
 .groupIcon,
 .top5Icon {
-  /* position: absolute; */
+  position: absolute;
   top: 3.13rem;
   left: 20.13rem;
   width: 1.15rem;
@@ -365,7 +365,7 @@
   flex-shrink: 0;
 }
 .coMagazineWrapper {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0.63rem;
   background-color: var(--color-black);
@@ -376,14 +376,14 @@
   justify-content: flex-start;
 }
 .groupChild1 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 0.63rem;
   height: 0.63rem;
 }
 .groupChild2 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.47rem;
   left: 13.48rem;
   width: 0.8rem;
@@ -392,7 +392,7 @@
 }
 .groupDiv,
 .maskGroupIcon {
-  /* position: absolute; */
+  position: absolute;
   top: 18.63rem;
 }
 .groupDiv {
@@ -410,7 +410,7 @@
 }
 .child1,
 .rectangleDiv {
-  /* position: absolute; */
+  position: absolute;
   top: 42.06rem;
   left: 8.13rem;
   background: linear-gradient(228.37deg, #000, transparent);
@@ -428,7 +428,7 @@
   height: 1.14rem;
 }
 .child2 {
-  /* position: absolute; */
+  position: absolute;
   top: 210.13rem;
   left: 0;
   width: 22.5rem;
@@ -443,7 +443,7 @@
   flex-shrink: 0;
 }
 .wrapper8 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.63rem;
   left: 0;
   background-color: var(--color-black);
@@ -454,7 +454,7 @@
   justify-content: flex-start;
 }
 .groupChild4 {
-  /* position: absolute; */
+  position: absolute;
   top: 1.09rem;
   left: 9.73rem;
   width: 0.8rem;
@@ -462,7 +462,7 @@
   opacity: 0.6;
 }
 .frameParent1 {
-  /* position: absolute; */
+  position: absolute;
   top: 37.31rem;
   left: 1.25rem;
   width: 11.06rem;
@@ -480,7 +480,7 @@
 .child3,
 .icon10,
 .icon9 {
-  /* position: absolute; */
+  position: absolute;
 }
 .icon10 {
   top: 97.31rem;
@@ -500,7 +500,7 @@
 .child4,
 .child5,
 .child6 {
-  /* position: absolute; */
+  position: absolute;
   top: 141.06rem;
   left: 1.25rem;
   background-color: var(--label-color-dark-primary);
@@ -515,7 +515,7 @@
   left: 21.88rem;
 }
 .groupChild5 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   border: 1.5px solid var(--color-whitesmoke-200);
@@ -524,13 +524,13 @@
   height: 2.75rem;
 }
 .div31 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.69rem;
   left: 6.38rem;
   line-height: 1.38rem;
 }
 .rectangleParent {
-  /* position: absolute; */
+  position: absolute;
   top: 123.69rem;
   left: 1.25rem;
   width: 20rem;
@@ -539,13 +539,13 @@
   font-size: var(--font-size-base);
 }
 .best3 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.69rem;
   left: 6.19rem;
   line-height: 1.38rem;
 }
 .rectangleGroup {
-  /* position: absolute; */
+  position: absolute;
   top: 202.38rem;
   left: 1.25rem;
   width: 20rem;
@@ -554,7 +554,7 @@
   font-size: var(--font-size-base);
 }
 .groupChild7 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
@@ -565,7 +565,7 @@
 }
 .div32,
 .div33 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   line-height: 1.25rem;
   font-weight: 500;
@@ -579,7 +579,7 @@
 }
 .groupChild8,
 .groupChild9 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.44rem;
   left: 2.44rem;
   width: 0.44rem;
@@ -593,7 +593,7 @@
   opacity: 0.3;
 }
 .rectangleContainer {
-  /* position: absolute; */
+  position: absolute;
   top: 16.38rem;
   left: 17.31rem;
   width: 3.44rem;
@@ -602,7 +602,7 @@
   color: var(--label-color-dark-primary);
 }
 .ellipseIcon {
-  /* position: absolute; */
+  position: absolute;
   top: 16.56rem;
   left: 19.56rem;
   width: 0.88rem;
@@ -612,7 +612,7 @@
 .child7,
 .child8,
 .child9 {
-  /* position: absolute; */
+  position: absolute;
   top: 35.06rem;
   left: 18.13rem;
   width: 0.25rem;
@@ -648,7 +648,7 @@
 .parent1,
 .parent2,
 .parent3 {
-  /* position: absolute; */
+  position: absolute;
   top: 172.44rem;
   left: 11.81rem;
   display: flex;
@@ -669,7 +669,7 @@
 .child10,
 .child11,
 .child12 {
-  /* position: absolute; */
+  position: absolute;
   top: 176.31rem;
   left: 17.81rem;
   width: 3.43rem;
@@ -697,7 +697,7 @@
   align-items: center;
 }
 .inner1 {
-  /* position: absolute; */
+  position: absolute;
   top: 169.94rem;
   left: 11.81rem;
   flex-direction: column;
@@ -725,7 +725,7 @@
 .div44,
 .inner2,
 .inner3 {
-  /* position: absolute; */
+  position: absolute;
 }
 .inner3 {
   top: 191.31rem;
@@ -749,7 +749,7 @@
 }
 .icon11,
 .maskGroupIcon1 {
-  /* position: absolute; */
+  position: absolute;
   top: 148.88rem;
   left: 2.31rem;
   width: 0.44rem;
@@ -767,7 +767,7 @@
   line-height: 1.25rem;
 }
 .listWrapper {
-  /* position: absolute; */
+  position: absolute;
   top: 152.19rem;
   left: 2.38rem;
   background-color: var(--color-linen-100);
@@ -778,7 +778,7 @@
   justify-content: flex-start;
 }
 .div45 {
-  /* position: absolute; */
+  position: absolute;
   top: 148.94rem;
   left: 12.5rem;
   font-size: var(--font-size-xs);
@@ -791,7 +791,7 @@
 }
 .icon12,
 .maskGroupIcon2 {
-  /* position: absolute; */
+  position: absolute;
   top: 148.88rem;
   left: 13rem;
   width: 0.44rem;
@@ -805,7 +805,7 @@
   object-fit: cover;
 }
 .listContainer {
-  /* position: absolute; */
+  position: absolute;
   top: 152.19rem;
   left: 12.69rem;
   background-color: var(--color-linen-100);
@@ -816,7 +816,7 @@
   justify-content: flex-start;
 }
 .groupChild10 {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   background-color: var(--color-black);
@@ -825,14 +825,14 @@
   opacity: 0.6;
 }
 .div46 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.06rem;
   left: 0.53rem;
   line-height: 1.25rem;
   font-weight: 300;
 }
 .rectangleParent1 {
-  /* position: absolute; */
+  position: absolute;
   top: 168.81rem;
   left: 1.25rem;
   width: 1.44rem;
@@ -840,7 +840,7 @@
   color: var(--label-color-dark-primary);
 }
 .div47 {
-  /* position: absolute; */
+  position: absolute;
   top: 0.06rem;
   left: 0.47rem;
   line-height: 1.25rem;
@@ -848,7 +848,7 @@
 }
 .rectangleParent2,
 .rectangleParent3 {
-  /* position: absolute; */
+  position: absolute;
   top: 179.5rem;
   left: 1.25rem;
   width: 1.44rem;
@@ -861,8 +861,8 @@
 .div {
   position: relative;
   background-color: var(--label-color-dark-primary);
-  width: 100%;
-  /* height: 215.5rem; */
+  /* width: 100%; */
+  height: 215.5rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-sm);

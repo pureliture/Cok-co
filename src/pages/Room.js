@@ -1,4 +1,5 @@
-import styles from "./Room.module.css";
+import React from 'react';
+import styles from './Room.module.css';
 
 const Room = () => {
   return (
@@ -45,7 +46,7 @@ const Room = () => {
         <div className={styles.div6}>
           <p className={styles.p}>적정온도는 자연 한 가운데에서</p>
           <p className={styles.p}>
-            천천히 일상의 균형을 찾아가는 ‘쉼'의 공간입니다.
+            {"천천히 일상의 균형을 찾아가는 '쉼'의 공간입니다."}
           </p>
         </div>
       </div>
