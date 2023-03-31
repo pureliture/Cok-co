@@ -1,6 +1,6 @@
 .child,
 .div1 {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
 }
 .child {
@@ -23,7 +23,7 @@
 .groupChild,
 .item,
 .parent {
-  position: absolute;
+  /* position: absolute; */
 }
 .parent {
   top: 205.81rem;
@@ -43,7 +43,7 @@
   margin: 0;
 }
 .div2 {
-  position: absolute;
+  /* position: absolute; */
   top: 205.44rem;
   left: 1.25rem;
   font-size: var(--font-size-3xl);
@@ -54,14 +54,14 @@
   text-decoration: underline;
 }
 .coMagazineContainer {
-  position: absolute;
+  /* position: absolute; */
   top: 209.81rem;
   left: 1.25rem;
   font-size: var(--font-size-sm);
   line-height: 1.25rem;
 }
 .inner {
-  position: absolute;
+  /* position: absolute; */
   top: 19.06rem;
   left: 5.63rem;
   background-color: var(--color-gainsboro-200);
@@ -72,7 +72,7 @@
 }
 .image9Icon,
 .rectangleDiv {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   width: 22.5rem;
 }
@@ -88,7 +88,7 @@
 }
 .div3,
 .div4 {
-  position: absolute;
+  /* position: absolute; */
   top: 45.38rem;
   left: 1.25rem;
   font-size: var(--font-size-xl);
@@ -99,14 +99,14 @@
   top: 57.06rem;
 }
 .groupIcon {
-  position: absolute;
+  /* position: absolute; */
   top: 3.13rem;
   left: 20.13rem;
   width: 1.15rem;
   height: 1.15rem;
 }
 .icHomeDefaultIcon {
-  position: absolute;
+  /* position: absolute; */
   top: 2.88rem;
   left: 17.5rem;
   width: 1.5rem;
@@ -117,7 +117,7 @@
 .child2,
 .child3,
 .child4 {
-  position: absolute;
+  /* position: absolute; */
   top: 48.13rem;
   left: 1.25rem;
   background-color: var(--label-color-dark-primary);
@@ -142,7 +142,7 @@
 }
 .icArrowIcon,
 .icCalenderDefaultIcon {
-  position: absolute;
+  /* position: absolute; */
   top: 48.75rem;
   left: 2.13rem;
   width: 1.5rem;
@@ -155,7 +155,7 @@
 }
 .icon,
 .icon1 {
-  position: absolute;
+  /* position: absolute; */
   top: 7.5rem;
   left: 4.06rem;
   width: 14.38rem;
@@ -193,7 +193,7 @@
 .child5,
 .div7,
 .group {
-  position: absolute;
+  /* position: absolute; */
 }
 .div7 {
   top: 30.38rem;
@@ -217,7 +217,7 @@
   height: 1.14rem;
 }
 .wrapper {
-  position: absolute;
+  /* position: absolute; */
   top: 34.56rem;
   left: 1.25rem;
   background-color: var(--color-linen-100);
@@ -236,7 +236,7 @@
   flex-shrink: 0;
 }
 .architectBraWrapper {
-  position: absolute;
+  /* position: absolute; */
   top: 186.69rem;
   left: 1.25rem;
   background-color: var(--color-linen-100);
@@ -249,7 +249,7 @@
 }
 .child6,
 .div9 {
-  position: absolute;
+  /* position: absolute; */
 }
 .div9 {
   top: 32.06rem;
@@ -277,7 +277,7 @@
 .child7,
 .child8,
 .div10 {
-  position: absolute;
+  /* position: absolute; */
 }
 .child8 {
   top: 38.69rem;
@@ -293,14 +293,14 @@
   line-height: 1.38rem;
 }
 .iconChatBubbleDots {
-  position: absolute;
+  /* position: absolute; */
   top: 0.38rem;
   left: 0;
   width: 0.81rem;
   height: 0.73rem;
 }
 .container {
-  position: absolute;
+  /* position: absolute; */
   top: 39.38rem;
   left: 4.13rem;
   width: 3.88rem;
@@ -308,20 +308,20 @@
   text-align: center;
 }
 .div11 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0.94rem;
   line-height: 1.38rem;
 }
 .iconLocation {
-  position: absolute;
+  /* position: absolute; */
   top: 0.31rem;
   left: 0;
   width: 0.57rem;
   height: 0.79rem;
 }
 .groupDiv {
-  position: absolute;
+  /* position: absolute; */
   top: 39.38rem;
   left: 14.56rem;
   width: 3.56rem;
@@ -335,7 +335,7 @@
   flex-shrink: 0;
 }
 .frameDiv {
-  position: absolute;
+  /* position: absolute; */
   top: 48.94rem;
   left: 4.25rem;
   display: flex;
@@ -352,7 +352,7 @@
   font-weight: 500;
 }
 .openWrapper {
-  position: absolute;
+  /* position: absolute; */
   top: 60.63rem;
   left: 4.25rem;
   display: flex;
@@ -367,7 +367,7 @@
   line-height: 1.13rem;
 }
 .frame {
-  position: absolute;
+  /* position: absolute; */
   top: 62.13rem;
   left: 4.25rem;
   display: flex;
@@ -377,7 +377,7 @@
   font-size: var(--font-size-sm);
 }
 .icArrowIcon1 {
-  position: absolute;
+  /* position: absolute; */
   top: 48.75rem;
   left: 19.13rem;
   width: 1.5rem;
@@ -386,7 +386,7 @@
 }
 .div15,
 .div16 {
-  position: absolute;
+  /* position: absolute; */
   font-size: var(--font-size-sm);
   line-height: 1.25rem;
 }
@@ -404,7 +404,7 @@
 }
 .child9,
 .ellipseIcon {
-  position: absolute;
+  /* position: absolute; */
   top: 61.5rem;
   left: 2.44rem;
   width: 0.85rem;
@@ -417,7 +417,7 @@
   height: 0.25rem;
 }
 .div17 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   line-height: 1.5rem;
@@ -430,7 +430,7 @@
 .div18,
 .div19,
 .div20 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   line-height: 1.5rem;
 }
@@ -444,7 +444,7 @@
 }
 .parent1,
 .parent2 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 13.75rem;
   width: 3.94rem;
@@ -456,7 +456,7 @@
 }
 .groupInner,
 .groupItem {
-  position: absolute;
+  /* position: absolute; */
   top: 2.22rem;
   left: 0;
   width: 20rem;
@@ -475,7 +475,7 @@
 .groupParent,
 .icon2,
 .parent4 {
-  position: absolute;
+  /* position: absolute; */
 }
 .icon2 {
   top: 54.75rem;
@@ -497,7 +497,7 @@
 .icon4,
 .icon5,
 .icon6 {
-  position: absolute;
+  /* position: absolute; */
   object-fit: cover;
 }
 .icon3 {
@@ -529,7 +529,7 @@
 }
 .parent5,
 .parent6 {
-  position: absolute;
+  /* position: absolute; */
   top: 39rem;
   left: 15.06rem;
   display: flex;
@@ -551,7 +551,7 @@
   object-fit: cover;
 }
 .icon7 {
-  position: absolute;
+  /* position: absolute; */
   top: 49.56rem;
   width: 12.13rem;
   height: 8.06rem;
@@ -564,7 +564,7 @@
 .icon8,
 .icon9,
 .parent7 {
-  position: absolute;
+  /* position: absolute; */
 }
 .icon9 {
   top: 80.63rem;
@@ -583,7 +583,7 @@
   gap: var(--gap-7xs);
 }
 .parent3 {
-  position: absolute;
+  /* position: absolute; */
   top: 82.19rem;
   left: -4.31rem;
   width: 41.81rem;
@@ -600,7 +600,7 @@
 }
 .vectorIcon,
 .wrapper1 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 }
 .wrapper1 {
@@ -618,7 +618,7 @@
   height: 0.63rem;
 }
 .frameParent {
-  position: absolute;
+  /* position: absolute; */
   top: 75.69rem;
   left: 5.56rem;
   width: 15.69rem;
@@ -628,7 +628,7 @@
 .image11Icon,
 .image12Icon,
 .maskGroupIcon {
-  position: absolute;
+  /* position: absolute; */
   top: 75.94rem;
   left: 1.25rem;
   width: 4.13rem;
@@ -646,7 +646,7 @@
   width: 13rem;
 }
 .groupChild1 {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   background-color: var(--color-black);
@@ -654,14 +654,14 @@
   height: 5.38rem;
 }
 .div30 {
-  position: absolute;
+  /* position: absolute; */
   top: 1.06rem;
   left: 9.38rem;
   line-height: 1.25rem;
   font-weight: 500;
 }
 .rectangleParent {
-  position: absolute;
+  /* position: absolute; */
   top: 231.94rem;
   left: 0;
   width: 22.5rem;

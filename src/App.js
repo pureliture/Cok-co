@@ -1,5 +1,10 @@
+import DetailRoom1 from 'Component/DetailRoom1';
+import ReviewPhotos from 'Component/ReviewPhotos';
 import Calendar from 'pages/Calendar';
+import Component1 from 'pages/Component1';
 import Component6 from 'pages/Component6';
+import PushNoti from 'pages/PushNoti';
+import Reserve from 'pages/Reserve';
 import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -31,13 +36,19 @@ const App = () => {
       >
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/Component1" element={<Component1 />}></Route>
           <Route path="/Component6" element={<Component6 />}></Route>
+          <Route path="/Room" element={<Room />}></Route>
           <Route path="/favorite" element={<Favorite />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/mypage" element={<MyPage />}></Route>
-          <Route path="/room/:roomNo" element={<Room />}></Route>
+          <Route path="/room/1" exact element={<DetailRoom1 />}></Route>
+          <Route path="/room/:roomId" exact element={<DetailRoom1 />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/calendar" element={<Calendar />}></Route>
+          <Route path="/reserve" element={<Reserve />}></Route>
+          <Route path="/pushNoti" element={<PushNoti />}></Route>
+          <Route path="/ReviewPhotos" element={<ReviewPhotos />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </Suspense>

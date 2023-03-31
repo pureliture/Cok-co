@@ -1,17 +1,18 @@
+import Nav from 'Component/Nav';
 import React from 'react';
 
 const NotFound = () => {
   return (
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
+        border: '1px solid red',
+        width: '360px',
+        minHeight: '740px',
+        margin: '0 auto',
       }}
     >
       <div>NotFound</div>
+      <Nav></Nav>
     </div>
   );
 };

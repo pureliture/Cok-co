@@ -1,20 +1,21 @@
-import Nav from 'Component/Nav';
 import React from 'react';
 
-const NotFound = () => {
+const PushNoti = () => {
   return (
     <div
       style={{
-        border: '1px solid red',
         width: '360px',
         minHeight: '740px',
         margin: '0 auto',
       }}
     >
-      <div>MyPage</div>
-      <Nav></Nav>
+      <img
+        style={{ width: '360px', height: '740px' }}
+        alt=""
+        src={'/pushNoti.png'}
+      ></img>
     </div>
   );
 };
 
-export default NotFound;
+export default PushNoti;
