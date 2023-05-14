@@ -39,7 +39,7 @@ const Nav = () => {
         onClick={() => handleClick('search')}
       ></img>
       <img
-        style={{ width: '24px', height: '24px' }}
+        style={{ width: '24px', height: '20px' }}
         alt=""
         src="/ic_calender_default.png"
         onClick={() => handleClick('calendar')}
