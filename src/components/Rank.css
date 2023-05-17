@@ -1,0 +1,33 @@
+.rank {
+  display: flex;
+}
+
+.city_img {
+  width: 180px;
+  height: 120px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.city_description {
+  width: 100px;
+  height: 120px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.ranking {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.city {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.continent {
+  font-size: 14px;
+  font-weight: 600;
+}

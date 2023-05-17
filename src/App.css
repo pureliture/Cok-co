@@ -41,3 +41,12 @@ img {
   width: 360px;
   height: 800px;
 }
+
+.page {
+  width: 360px;
+  min-height: 740px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}

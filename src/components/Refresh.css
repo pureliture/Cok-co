@@ -1,0 +1,33 @@
+.refresh_section {
+  width: 360px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn_wrapper {
+  width: 89px;
+  height: 33px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: white;
+  color: #1a1a1a;
+  border-radius: 24px;
+}
+
+.btn_text {
+  font-size: 14px;
+}
+
+.refresh_btn {
+  width: 16px;
+  height: 16px;
+}
