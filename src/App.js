@@ -1,57 +1,49 @@
-import DetailRoom1 from 'Component/DetailRoom1';
-import ReviewPhotos from 'Component/ReviewPhotos';
-import Calendar from 'pages/Calendar';
-import Component1 from 'pages/Component1';
-import Component6 from 'pages/Component6';
-import PushNoti from 'pages/PushNoti';
-import Reserve from 'pages/Reserve';
-import React, { Suspense } from 'react';
+import React from 'react';
+import './App.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TasteCard from 'components/TasteCard';
+import CurationCard from 'components/CurationCard';
 
-// pages
-const Favorite = React.lazy(() => import('pages/Favorite'));
-const Home = React.lazy(() => import('pages/Home'));
-const Login = React.lazy(() => import('pages/Login'));
-const MyPage = React.lazy(() => import('pages/MyPage'));
-const Room = React.lazy(() => import('pages/Room'));
-const SignUp = React.lazy(() => import('pages/SignUp'));
-const NotFound = React.lazy(() => import('pages/NotFound'));
+const Splash = React.lazy(() => import('./pages/Splash'));
 
-// TODO: ScrollToTop 필요
 const App = () => {
+  const hashtags = ['바다로', '에메랄드 해변뷰'];
+
   return (
     <BrowserRouter>
-      <Suspense
-        fallback={
-          // 로딩시 보여지는 예비 화면
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              height: '100vh',
-            }}
-          ></div>
-        }
-      >
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Component1" element={<Component1 />}></Route>
-          <Route path="/Component6" element={<Component6 />}></Route>
-          <Route path="/Room" element={<Room />}></Route>
-          <Route path="/favorite" element={<Favorite />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/mypage" element={<MyPage />}></Route>
-          <Route path="/room/1" exact element={<DetailRoom1 />}></Route>
-          <Route path="/room/:roomId" exact element={<DetailRoom1 />}></Route>
-          <Route path="/signup" element={<SignUp />}></Route>
-          <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/reserve" element={<Reserve />}></Route>
-          <Route path="/pushNoti" element={<PushNoti />}></Route>
-          <Route path="/ReviewPhotos" element={<ReviewPhotos />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route exact path="/" element={<Splash />}></Route>
+        <Route
+          path="/tasteCard"
+          element={<TasteCard imgSrc={'/room1.png'} hashtags={hashtags} />}
+        ></Route>
+        <Route
+          path="/curationCard"
+          element={
+            <>
+              <CurationCard
+                size="l"
+                title="몰래 알아본 일본 현지인 추천 방안의 자쿠지 15곳"
+                imgSrc={'/room1.png'}
+                bgColor="#EFE6D5"
+              />
+              <CurationCard
+                size="m"
+                title="터키 열기구는 Tholla 호텔에서"
+                imgSrc={'/turkey.png'}
+                bgColor="#CFBA92"
+              />
+              <CurationCard
+                size="s"
+                title="정글 하우스"
+                imgSrc={'/junglehouse.png'}
+                bgColor="#CFBA92"
+              />
+            </>
+          }
+        ></Route>
+      </Routes>
     </BrowserRouter>
   );
 };

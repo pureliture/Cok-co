@@ -1,0 +1,81 @@
+.l_card {
+  width: 280px;
+  height: 434px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.m_card {
+  width: 240px;
+  height: 345px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.s_card {
+  width: 158px;
+  height: 220px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.l_main_img {
+  width: 280px;
+  height: 316px;
+  background-size: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.m_main_img {
+  width: 240px;
+  height: 230px;
+  background-size: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.s_main_img {
+  width: 158px;
+  height: 158px;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.l_title {
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+
+.m_title {
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+
+.s_title {
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+.badge {
+  width: 54px;
+  height: 20px;
+}
+
+.title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  word-break: keep-all;
+}
