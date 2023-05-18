@@ -1,0 +1,8 @@
+.linear_gradient {
+  bottom: 0;
+  width: 360px;
+  height: 601px;
+  background: linear-gradient(white 70%, #1a1a1a);
+  position: absolute;
+  opacity: 0.5;
+}

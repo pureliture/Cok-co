@@ -3,7 +3,11 @@ import { React } from 'react';
 import './Badge.css';
 
 const Badge = () => {
-  return <img className="badge" src={'./badge.png'}></img>;
+  return (
+    <div className="badge_img">
+      <img src={'./badge.png'}></img>
+    </div>
+  );
 };
 
 export default Badge;
