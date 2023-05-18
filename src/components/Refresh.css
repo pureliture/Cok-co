@@ -8,23 +8,12 @@
   color: white;
   border-radius: 24px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: var(--semibold);
 }
 
-.btn_wrapper {
-  width: 89px;
-  height: 33px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  background-color: white;
-  color: #1a1a1a;
-  border-radius: 24px;
-}
-
-.btn_text {
+.refresh_btn_text {
   font-size: 14px;
+  font-weight: var(--semibold);
 }
 
 .refresh_btn {

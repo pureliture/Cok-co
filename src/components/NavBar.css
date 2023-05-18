@@ -11,7 +11,7 @@ img {
   height: 24px;
 }
 
-.navbtn {
+.nav_btn {
   height: 56px;
   text-align: center;
   display: flex;
@@ -19,6 +19,6 @@ img {
   justify-content: center;
 }
 
-.selected {
+.nav_selected {
   color: white;
 }

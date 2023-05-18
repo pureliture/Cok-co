@@ -1,5 +1,6 @@
 import { React } from 'react';
 import './CurationCard.css';
+import Badge from './Badge';
 
 const CurationCard = ({ size, title, imgSrc, bgColor }) => {
   if (size === 'l') {
@@ -12,7 +13,7 @@ const CurationCard = ({ size, title, imgSrc, bgColor }) => {
       >
         <img className="l_main_img" src={imgSrc}></img>
         <div className="l_title">
-          <img className="badge" src={'./badge.png'}></img>
+          <Badge />
           <div className="title">{title}</div>
         </div>
       </div>
@@ -27,7 +28,7 @@ const CurationCard = ({ size, title, imgSrc, bgColor }) => {
       >
         <img className="m_main_img" src={imgSrc}></img>
         <div className="m_title">
-          <img className="badge" src={'./badge.png'}></img>
+          <Badge />
           <div className="title">{title}</div>
         </div>
       </div>
@@ -42,7 +43,7 @@ const CurationCard = ({ size, title, imgSrc, bgColor }) => {
       >
         <img className="s_main_img" src={imgSrc}></img>
         <div className="s_title">
-          <img className="badge" src={'./badge.png'}></img>
+          <Badge />
           <div className="title">{title}</div>
         </div>
       </div>

@@ -1,0 +1,8 @@
+.radius_rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #1a1a1a;
+  border-radius: 24px;
+}

@@ -3,11 +3,11 @@ import './NavBar.css';
 
 const NavBtn = ({ imgSrc, description, selected }) => {
   return (
-    <div className="navbtn">
+    <div className="nav_btn">
       <div>
         <img src={imgSrc}></img>
       </div>
-      <div className="selected">{description}</div>
+      <div className="nav_selected">{description}</div>
     </div>
   );
 };
