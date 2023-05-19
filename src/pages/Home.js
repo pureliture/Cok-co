@@ -6,7 +6,7 @@ import Discovery from 'components/Discovery';
 // import { useNavigate } from 'react-router-dom';
 
 const Home = ({ username, locations }) => {
-  const selected = 1;
+  const selected = 0;
 
   return (
     <div className="page">

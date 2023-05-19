@@ -37,11 +37,6 @@
   }
 }
 
-img {
-  width: 360px;
-  height: 800px;
-}
-
 .page {
   width: 360px;
   min-height: 740px;
@@ -50,4 +45,8 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
 }

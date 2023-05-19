@@ -6,6 +6,7 @@ import TasteCard from 'components/TasteCard';
 import CurationCard from 'components/CurationCard';
 import CurationCardEx from 'test/CurationCardEx';
 import Home from 'pages/Home';
+import DetailStay from 'components/DetailStay';
 
 const Splash = React.lazy(() => import('./pages/Splash'));
 
@@ -27,7 +28,7 @@ const App = () => {
             <Home username={username} locations={['동북아', '동남아']} />
           }
         ></Route>
-
+        <Route path="/stay/:id/detail" element={<DetailStay />}></Route>
         <Route path="/curationCardEx" element={<CurationCardEx />}></Route>
       </Routes>
     </BrowserRouter>

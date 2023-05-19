@@ -1,0 +1,9 @@
+.btn_text {
+  font-size: 14px;
+  font-weight: var(--semibold);
+}
+
+.btn_img {
+  width: 16px;
+  height: 16px;
+}

@@ -1,15 +1,15 @@
 import { React } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import Rank from 'components/Rank';
-import Refresh from 'components/Refresh';
 import Subject from 'components/Subject';
 import CurationCard from 'components/CurationCard';
+import './styles/Recommend.css';
+import RadiusRect from './RadiusRect';
 
 const Recommend = ({ username, locations }) => {
   return (
     <div style={{ position: 'relative' }}>
       <img
-        src="./dart_board_left.png"
+        src="dart_board_left.png"
         style={{
           transform: 'rotate(-13.23deg)',
           width: '241.48px',
@@ -75,24 +75,24 @@ const Recommend = ({ username, locations }) => {
         <Subject
           subject="트리피커들이 떠나고 싶은"
           description="지금 많이 찾는 여행지"
-          textColor="white"
+          color="white"
         ></Subject>
         <Rank
-          imgSrc="./paris.png"
+          imgSrc="/paris.png"
           bgColor="#9C95AA"
           ranking="1"
           city="파리"
           continent="유럽"
         ></Rank>
         <Rank
-          imgSrc="./japan.png"
+          imgSrc="/japan.png"
           bgColor="#C0AFA4"
           ranking="2"
           city="일본"
           continent="동북아"
         ></Rank>
         <Rank
-          imgSrc="./thailand.png"
+          imgSrc="/thailand.png"
           bgColor="#CFD4D0"
           ranking="3"
           city="태국"
@@ -103,9 +103,12 @@ const Recommend = ({ username, locations }) => {
         <Subject
           subject="유럽이 1등인 이유"
           description={`유럽 숙소는 비싸다? \n 트리픽 숙소는 다르다!`}
-          textColor="white"
+          color="white"
         ></Subject>
-        <div style={{ display: 'flex', overflowX: 'scroll' }}>
+        <div
+          className="scroll"
+          style={{ display: 'flex', overflowX: 'scroll' }}
+        >
           <CurationCard
             size="m"
             title={`꿈꿔온 에펠탑 뷰 \n 바로 떠나봐요`}
@@ -140,7 +143,18 @@ const Recommend = ({ username, locations }) => {
           />
         </div>
       </div>
-      <Refresh />
+      <RadiusRect
+        width="360px"
+        height="80px"
+        backgroundColor="black"
+        color="white"
+      >
+        <div>새로운 추천을 받고 싶다면?</div>
+        <RadiusRect width="89px" height="33px">
+          <div className="btn_text">새로고침</div>
+          <img className="btn_img" src="./material-symbols_refresh.png"></img>
+        </RadiusRect>
+      </RadiusRect>
     </div>
   );
 };

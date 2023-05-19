@@ -6,16 +6,13 @@ import './Subject.css';
 const Subject = ({
   subject,
   description,
-  textColor = 'black',
+  color = 'black',
   fontSize = '24px',
 }) => {
   return (
     <div>
       {subject ? <div className="subject">{subject}</div> : <></>}
-      <div
-        className="description"
-        style={{ color: textColor, fontSize: fontSize }}
-      >
+      <div className="description" style={{ color, fontSize }}>
         {description}
       </div>
     </div>

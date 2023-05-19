@@ -1,13 +1,8 @@
 import { React } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import './Badge.css';
 
 const Badge = () => {
-  return (
-    <div className="badge_img">
-      <img src={'./badge.png'}></img>
-    </div>
-  );
+  return <img className="badge_img" src={'/badge.png'}></img>;
 };
 
 export default Badge;

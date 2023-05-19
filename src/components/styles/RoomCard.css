@@ -1,0 +1,50 @@
+.room_card {
+  width: 240px;
+  height: 318px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  margin: auto 2px;
+  position: relative;
+}
+
+.room_img {
+  width: 240px;
+  height: 230px;
+  background-size: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.room_description {
+  width: 240px;
+  height: 108px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.room_title_wrapper {
+  margin: auto 20px;
+}
+
+.price_wrapper {
+  display: flex;
+}
+
+.price {
+  color: #d4634a;
+  font-size: 14px;
+  font-weight: var(--semibold);
+}
+
+.one_day {
+  color: #aeaeae;
+  font-size: 14px;
+  font-weight: var(--semibold);
+}

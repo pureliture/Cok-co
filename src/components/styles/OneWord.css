@@ -1,0 +1,15 @@
+.one_word_wrapper {
+  width: 300px;
+  margin: 30px;
+}
+
+.one_word {
+  font-size: 14px;
+  font-weight: var(--semibold);
+  color: #aeaeae;
+}
+
+.word {
+  font-size: 14px;
+  font-weight: var(--semibold);
+}

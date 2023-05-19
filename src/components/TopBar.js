@@ -23,9 +23,9 @@ const Tab = ({ selected }) => {
 const TopBar = ({ selected }) => {
   return (
     <div className="top_bar">
-      <img className="top_bar_btn" src="./search.png"></img>
+      <img className="top_bar_btn" src="/search.png"></img>
       <Tab selected={selected} />
-      <img className="top_bar_btn" src="./filter.png"></img>
+      <img className="top_bar_btn" src="/filter.png"></img>
     </div>
   );
 };

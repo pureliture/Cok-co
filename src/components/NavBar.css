@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-img {
+.nav_btn_img {
   width: 24px;
   height: 24px;
 }

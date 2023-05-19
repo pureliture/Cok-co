@@ -1,10 +1,19 @@
 import { React } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import './RadiusRect.css';
 
-const RadiusRect = ({ children, width, height }) => {
+const RadiusRect = ({
+  children,
+  width = '360px',
+  height,
+  backgroundColor = 'white',
+  color = 'black',
+  border = 'none',
+}) => {
   return (
-    <div className="radius_rect" style={{ width, height }}>
+    <div
+      className="radius_rect"
+      style={{ width, height, backgroundColor, color, border }}
+    >
       {children}
     </div>
   );
