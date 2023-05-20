@@ -9,6 +9,7 @@ import DetailStay from 'pages/DetailStay';
 import Step1 from 'pages/Step1';
 import Step2 from 'pages/Step2';
 import Step3 from 'pages/Step3';
+import NotFound from 'pages/NotFound';
 
 const Splash = React.lazy(() => import('./pages/Splash'));
 
@@ -49,6 +50,7 @@ const App = () => {
         />
         <Route path="/stay/:id/detail" element={<DetailStay />} />
         <Route path="/curationCardEx" element={<CurationCardEx />} />
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
   );

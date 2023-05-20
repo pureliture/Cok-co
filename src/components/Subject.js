@@ -8,11 +8,12 @@ const Subject = ({
   description,
   color = 'black',
   fontSize = '24px',
+  textAlign = 'left',
 }) => {
   return (
     <div>
       {subject ? <div className="subject">{subject}</div> : <></>}
-      <div className="description" style={{ color, fontSize }}>
+      <div className="description" style={{ color, fontSize, textAlign }}>
         {description}
       </div>
     </div>
