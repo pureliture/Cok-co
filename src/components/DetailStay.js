@@ -44,8 +44,6 @@ const DetailStay = () => {
         <div
           className="scroll"
           style={{
-            display: 'flex',
-            overflowX: 'scroll',
             paddingBottom: '30px',
           }}
         >
@@ -70,8 +68,6 @@ const DetailStay = () => {
         <div
           className="scroll"
           style={{
-            display: 'flex',
-            overflowX: 'scroll',
             paddingBottom: '30px',
           }}
         >
@@ -82,7 +78,7 @@ const DetailStay = () => {
           />
           <RoomCard
             imgSrc={'/veranda.png'}
-            title={`베란다를 나서면 \n 초록초록한 마운틴 뷰`}
+            title={`깨끗한 컨디션을 자랑하는 \n Presidentail Suite`}
             price={'128,342'}
           />
         </div>

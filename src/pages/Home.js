@@ -10,7 +10,9 @@ const Home = ({ username, locations }) => {
 
   return (
     <div className="page">
-      <TopBar selected={selected} />
+      <div style={{ margin: '50px 5px 20px 5px' }}>
+        <TopBar selected={selected} />
+      </div>
       {selected === 0 ? (
         <Recommend username={username} locations={locations} />
       ) : (

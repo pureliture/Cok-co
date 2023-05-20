@@ -2,8 +2,13 @@ import { React } from 'react';
 import Rank from 'components/Rank';
 import Subject from 'components/Subject';
 import CurationCard from 'components/CurationCard';
+import CountryBtn from 'components/CountryBtn';
+import RadiusRect from 'components/RadiusRect';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 import './styles/Recommend.css';
-import RadiusRect from './RadiusRect';
 
 const Recommend = ({ username, locations }) => {
   return (
@@ -11,38 +16,105 @@ const Recommend = ({ username, locations }) => {
       <img
         src="dart_board_left.png"
         style={{
-          transform: 'rotate(-13.23deg)',
+          transform: 'rotate(13.23deg)',
           width: '241.48px',
           height: '241.48px',
           position: 'absolute',
-          top: '25px',
+          top: '-20px',
           right: '-60px',
+          zIndex: 100,
         }}
       ></img>
       <div>
-        <Subject
-          subject="트리픽만의 룸 큐레이션"
-          description={`${username} 님을 위한 \n ${locations[0]} 룸 큐레이션`}
-        ></Subject>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <CurationCard
-            size="l"
-            title="몰래 알아본 일본 현지인 추천 방안의 자쿠지 15곳"
-            imgSrc={'/room1.png'}
-            bgColor="#EFE6D5"
-          />
+        <div style={{ margin: '30px' }}>
+          <Subject
+            subject="트리픽만의 룸 큐레이션"
+            description={`${username} 님을 위한 \n ${locations[0]} 룸 큐레이션`}
+          ></Subject>
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            paddingBottom: '30px',
+          }}
+        >
+          <Swiper
+            pagination={{
+              clickable: true,
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <CurationCard
+                size="l"
+                title={`몰래 알아본 일본 현지인 추천 \n 방안의 자쿠지 15곳`}
+                imgSrc={'/jacuzzi.png'}
+                bgColor="#EFE6D5"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CurationCard
+                size="l"
+                title={`베란다 문을 열면 퐁당 \n 한국보다 저렴한 동북아 14곳`}
+                imgSrc={'/veranda_moon.png'}
+                bgColor="#D9EFD5"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CurationCard
+                size="l"
+                title={`바다와 기찻길이 한눈에 보이는 \n 대만의 룸 20곳`}
+                imgSrc={'/sea_and_train_rail.png'}
+                bgColor="#D5E3EF"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CurationCard
+                size="l"
+                title={`잠들지 않는 밤 \n 화려한 홍콩시티뷰 10곳`}
+                imgSrc={'/night_hongkong.png'}
+                bgColor="#EFD5D5"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
-      <div style={{ backgroundColor: '#F2F2F2', borderRadius: '24px' }}>
-        <Subject
-          subject="트리픽만의 숙소 큐레이션"
-          description={`${username} 님이 떠나고 싶을 ${locations[1]} 숙소 큐레이션`}
-        ></Subject>
+      <div
+        style={{
+          backgroundColor: '#F2F2F2',
+          borderRadius: '24px',
+        }}
+      >
+        <div style={{ padding: '30px' }}>
+          <Subject
+            subject="트리픽만의 숙소 큐레이션"
+            description={`${username} 님이 떠나고 싶을 ${locations[1]} 숙소 큐레이션`}
+          ></Subject>
+        </div>
+        <div
+          className="scroll"
+          style={{ marginLeft: '30px', marginBottom: '50px' }}
+        >
+          <CountryBtn name="라오스" imgSrc="/laos_s.png" selected={true} />
+          <CountryBtn
+            name="필리핀"
+            imgSrc="/philippines.png"
+            selected={false}
+          />
+          <CountryBtn
+            name="싱가포르"
+            imgSrc="/singapore.png"
+            selected={false}
+          />
+          <CountryBtn name="캄보디아" imgSrc="/cambodia.png" selected={false} />
+        </div>
         <div
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            justifyContent: 'space-evenly',
+            justifyContent: 'center',
+            paddingBottom: '20px',
           }}
         >
           <CurationCard
@@ -71,43 +143,70 @@ const Recommend = ({ username, locations }) => {
           />
         </div>
       </div>
-      <div style={{ backgroundColor: 'black' }}>
-        <Subject
-          subject="트리피커들이 떠나고 싶은"
-          description="지금 많이 찾는 여행지"
-          color="white"
-        ></Subject>
-        <Rank
-          imgSrc="/paris.png"
-          bgColor="#9C95AA"
-          ranking="1"
-          city="파리"
-          continent="유럽"
-        ></Rank>
-        <Rank
-          imgSrc="/japan.png"
-          bgColor="#C0AFA4"
-          ranking="2"
-          city="일본"
-          continent="동북아"
-        ></Rank>
-        <Rank
-          imgSrc="/thailand.png"
-          bgColor="#CFD4D0"
-          ranking="3"
-          city="태국"
-          continent="동남아"
-        ></Rank>
+      <div style={{ backgroundColor: 'black', position: 'relative' }}>
+        <img
+          src="trophy_perspective.png"
+          style={{
+            transform: 'rotate(3.58deg)',
+            width: '209.2px',
+            height: '209.2px',
+            position: 'absolute',
+            top: '10px',
+            right: '-50px',
+            // zIndex: '-100',
+          }}
+        ></img>
+        <div style={{ padding: '100px 30px 30px 30px' }}>
+          <Subject
+            subject="트리피커들이 떠나고 싶은"
+            description="지금 많이 찾는 여행지"
+            color="white"
+          ></Subject>
+        </div>
+        <div
+          style={{
+            width: '360px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+          }}
+        >
+          <Rank
+            imgSrc="/paris.png"
+            bgColor="#9C95AA"
+            ranking="1"
+            city="파리"
+            continent="유럽"
+          ></Rank>
+          <Rank
+            imgSrc="/japan.png"
+            bgColor="#C0AFA4"
+            ranking="2"
+            city="일본"
+            continent="동북아"
+          ></Rank>
+          <Rank
+            imgSrc="/thailand.png"
+            bgColor="#CFD4D0"
+            ranking="3"
+            city="태국"
+            continent="동남아"
+          ></Rank>
+        </div>
       </div>
       <div style={{ backgroundColor: 'black' }}>
-        <Subject
-          subject="유럽이 1등인 이유"
-          description={`유럽 숙소는 비싸다? \n 트리픽 숙소는 다르다!`}
-          color="white"
-        ></Subject>
+        <div style={{ padding: '45px 30px 30px 30px' }}>
+          <Subject
+            subject="유럽이 1등인 이유"
+            description={`유럽 숙소는 비싸다? \n 트리픽 숙소는 다르다!`}
+            color="white"
+          ></Subject>
+        </div>
         <div
           className="scroll"
-          style={{ display: 'flex', overflowX: 'scroll' }}
+          style={{
+            paddingBottom: '75px',
+          }}
         >
           <CurationCard
             size="m"
@@ -129,32 +228,36 @@ const Recommend = ({ username, locations }) => {
           />
         </div>
       </div>
-      <div style={{ borderRadius: '24px' }}>
-        <Subject
-          subject="꼼꼼한 트리픽커들의 선택"
-          description="Global Best 10 Room"
-        ></Subject>
+      <div style={{ borderRadius: '24px', paddingBottom: '30px' }}>
+        <div style={{ padding: '30px' }}>
+          <Subject
+            subject="꼼꼼한 트리픽커들의 선택"
+            description="Global Best 10 Room"
+          ></Subject>
+        </div>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <CurationCard
             size="l"
             title="일박에 10만원 퀄리티는 100만원"
-            imgSrc={'/room1.png'}
+            imgSrc={'/ten_million.png'}
             bgColor="#EFE6D5"
           />
         </div>
       </div>
-      <RadiusRect
-        width="360px"
-        height="80px"
-        backgroundColor="black"
-        color="white"
-      >
-        <div>새로운 추천을 받고 싶다면?</div>
-        <RadiusRect width="89px" height="33px">
-          <div className="btn_text">새로고침</div>
-          <img className="btn_img" src="./material-symbols_refresh.png"></img>
+      <div style={{ margin: '40px 0 50px 0' }}>
+        <RadiusRect
+          width="360px"
+          height="80px"
+          backgroundColor="black"
+          color="white"
+        >
+          <div>새로운 추천을 받고 싶다면?</div>
+          <RadiusRect width="89px" height="33px">
+            <div className="btn_text">새로고침</div>
+            <img className="btn_img" src="./material-symbols_refresh.png"></img>
+          </RadiusRect>
         </RadiusRect>
-      </RadiusRect>
+      </div>
     </div>
   );
 };

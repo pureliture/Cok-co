@@ -65,6 +65,6 @@
 }
 
 .detail_btn {
-  width: 19.2px;
-  height: 19.2px;
+  width: 19.2px !important;
+  height: 19.2px !important;
 }

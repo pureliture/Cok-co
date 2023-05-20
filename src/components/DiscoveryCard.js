@@ -33,10 +33,8 @@ const DiscoveryCard = ({
               <div className="music_btn_text">{`${musicTitle} - ${singer}`}</div>
             </RadiusRect>
             <RadiusRect width="94px" height="40px">
-              <div className="refresh_btn_text">자세히보기</div>
-              <div className="detail_btn">
-                <img src="/mdi_share.png"></img>
-              </div>
+              <div className="detail_btn_text">자세히보기</div>
+              <img className="detail_btn" src="/mdi_share.png"></img>
             </RadiusRect>
           </div>
         </div>

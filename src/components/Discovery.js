@@ -1,8 +1,6 @@
 import { React } from 'react';
 import DiscoveryCard from './DiscoveryCard';
-// import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Pagination } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';

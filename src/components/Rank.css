@@ -1,5 +1,7 @@
 .rank {
   display: flex;
+  margin: 2px 40px;
+  z-index: 100;
 }
 
 .city_img {
@@ -11,9 +13,13 @@
 
 .city_description {
   width: 100px;
-  height: 120px;
+  height: 80px;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .ranking {

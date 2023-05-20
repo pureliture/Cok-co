@@ -8,4 +8,5 @@
   font-weight: bold;
   white-space: pre-line;
   text-align: left;
+  word-break: keep-all;
 }

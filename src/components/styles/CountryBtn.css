@@ -1,0 +1,27 @@
+.country_btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 92px;
+}
+
+.country_btn_img_wrapper {
+  width: 92px;
+  height: 92px;
+  border-radius: 70%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.country_btn_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+  margin-top: 4px;
+}
+
+.conutry_btn_name {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4px;
+}
