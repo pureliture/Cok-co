@@ -8,6 +8,7 @@ import Home from 'pages/Home';
 import DetailStay from 'pages/DetailStay';
 import Step1 from 'pages/Step1';
 import Step2 from 'pages/Step2';
+import Step3 from 'pages/Step3';
 
 const Splash = React.lazy(() => import('./pages/Splash'));
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/" element={<Splash />} />
         <Route path="/step1" element={<Step1 />} />
         <Route path="/step2" element={<Step2 />} />
+        <Route path="/step3" element={<Step3 />} />
         <Route
           path="/tasteCard"
           element={<TasteCard imgSrc={'/room1.png'} hashtags={hashtags} />}

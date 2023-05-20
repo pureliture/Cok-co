@@ -7,12 +7,15 @@ import Rect from '../components/Rect';
 import GoBackBar from '../components/GoBackBar';
 import CountryCard from 'components/CountryCard';
 import Region from 'components/Region';
+import RadiusRect from 'components/RadiusRect';
 
 const Step2 = () => {
   const disabled = true;
+  const count = 4231;
+  const selected = true;
 
   return (
-    <div className="page" style={{ minHeight: '720px' }}>
+    <div className="page" style={{ minHeight: '720px', marginBottom: '102px' }}>
       <GoBackBar />
       <div style={{ margin: '2px auto' }}>
         <ProgressBar value={66} />
@@ -25,7 +28,45 @@ const Step2 = () => {
           }
         />
       </div>
-      <Subject description="" />
+      <div style={{ marginBottom: '20px' }}>
+        <RadiusRect
+          width="360px"
+          height="100px"
+          backgroundColor="black"
+          color="white"
+        >
+          <div
+            style={{
+              display: 'flex',
+              margin: '30px',
+              justifyContent: 'space-between',
+              width: '100%',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div className="region">ALL</div>
+              <RadiusRect width="56px" height="33px">
+                <div
+                  style={{
+                    fontSize: '14px',
+                    fontWeight: 500,
+                    color: '#636363',
+                  }}
+                >
+                  {count.toLocaleString()}
+                </div>
+              </RadiusRect>
+            </div>
+            <img
+              src={selected ? '/check_full.png' : '/check.png'}
+              style={{ width: '32px', height: '32px' }}
+            />
+          </div>
+        </RadiusRect>
+      </div>
+      <div style={{ margin: '20px' }}>
+        <Subject description="아시아 대륙" />
+      </div>
       <Region region="동북아" count={2121}>
         <CountryCard
           imgSrc={'/japan_2.png'}
@@ -66,6 +107,23 @@ const Step2 = () => {
           name="인도"
           count={152}
           backgroundColor="#C0BABA"
+        />
+      </Region>
+      <div style={{ margin: '20px' }}>
+        <Subject description="유럽 대륙" />
+      </div>
+      <Region region="유럽" count={1048}>
+        <CountryCard
+          imgSrc={'/japan_2.png'}
+          name="일본"
+          count={821}
+          backgroundColor="#F0E0B5"
+        />
+        <CountryCard
+          imgSrc={'/taiwan.png'}
+          name="대만"
+          count={243}
+          backgroundColor="#8DAD9E"
         />
       </Region>
       <div style={{ position: 'fixed', bottom: '0' }}>

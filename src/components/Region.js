@@ -8,7 +8,7 @@ const Region = ({ region, count, selected = false, children }) => {
       <div
         style={{
           display: 'flex',
-          margin: '20px',
+          margin: '30px',
           justifyContent: 'space-between',
         }}
       >
