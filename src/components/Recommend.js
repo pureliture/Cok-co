@@ -231,8 +231,8 @@ const Recommend = ({ username, locations }) => {
       <div style={{ borderRadius: '24px', paddingBottom: '30px' }}>
         <div style={{ padding: '30px' }}>
           <Subject
-            subject="꼼꼼한 트리픽커들의 선택"
-            description="Global Best 10 Room"
+            subject={`숙소로 여행가요 \n 꼼꼼한 트리픽커들의 선택`}
+            description="월간 트리픽 매거진 Top5"
           ></Subject>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
