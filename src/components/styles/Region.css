@@ -1,0 +1,14 @@
+.region_wrapper {
+  width: 360px;
+  height: 320px;
+  background-color: black;
+  border-radius: 24px;
+  margin: 2px 0;
+}
+
+.region {
+  font-size: 24px;
+  font-weight: var(--semibold);
+  color: white;
+  margin-right: 20px;
+}

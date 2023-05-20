@@ -1,10 +1,10 @@
 import { React } from 'react';
-import ProgressBar from './ProgressBar';
-import Subject from './Subject';
-import Question from './Question';
-import TasteCard from './TasteCard';
-import Rect from './Rect';
-import GoBackBar from './GoBackBar';
+import ProgressBar from '../components/ProgressBar';
+import Subject from '../components/Subject';
+import Question from '../components/Question';
+import TasteCard from '../components/TasteCard';
+import Rect from '../components/Rect';
+import GoBackBar from '../components/GoBackBar';
 
 const Step1 = () => {
   const disabled = true;

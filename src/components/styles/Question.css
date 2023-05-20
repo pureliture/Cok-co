@@ -11,4 +11,5 @@
   font-weight: var(--medium);
   color: #8e8e8e;
   text-align: center;
+  white-space: pre-line;
 }

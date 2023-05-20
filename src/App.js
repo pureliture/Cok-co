@@ -3,11 +3,11 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TasteCard from 'components/TasteCard';
-import CurationCard from 'components/CurationCard';
 import CurationCardEx from 'test/CurationCardEx';
 import Home from 'pages/Home';
 import DetailStay from 'pages/DetailStay';
-import Step1 from 'components/Step1';
+import Step1 from 'pages/Step1';
+import Step2 from 'pages/Step2';
 
 const Splash = React.lazy(() => import('./pages/Splash'));
 
@@ -20,6 +20,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Splash />} />
         <Route path="/step1" element={<Step1 />} />
+        <Route path="/step2" element={<Step2 />} />
         <Route
           path="/tasteCard"
           element={<TasteCard imgSrc={'/room1.png'} hashtags={hashtags} />}

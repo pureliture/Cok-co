@@ -1,12 +1,7 @@
 import { React } from 'react';
 import './styles/Question.css';
 
-const Question = ({
-  subject,
-  description,
-  color = 'black',
-  fontSize = '24px',
-}) => {
+const Question = ({ subject, description }) => {
   return (
     <div>
       <div className="question">{subject}</div>
