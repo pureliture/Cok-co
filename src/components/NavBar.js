@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <NavBtn imgSrc="/ic_home_default_full.png" description="홈" />
-      <NavBtn imgSrc="/ic_heart_default.png" description="하트" />
+      <NavBtn imgSrc="/ic_heart_default.png" description="좋아요" />
       <NavBtn imgSrc="/ic_my_default.png" description="마이" />
     </div>
   );

@@ -4,12 +4,14 @@ import Subject from './Subject';
 import Question from './Question';
 import TasteCard from './TasteCard';
 import Rect from './Rect';
+import GoBackBar from './GoBackBar';
 
 const Step1 = () => {
   const disabled = true;
 
   return (
     <div className="page" style={{ minHeight: '720px' }}>
+      <GoBackBar />
       <div style={{ margin: '2px auto' }}>
         <ProgressBar value={33} />
       </div>
@@ -23,6 +25,7 @@ const Step1 = () => {
         <TasteCard
           imgSrc={'/emerald.png'}
           hashtags={['바다로', '에메랄드 해변뷰']}
+          selected={true}
         />
         <TasteCard
           imgSrc={'/five_star_hotel.png'}

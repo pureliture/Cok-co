@@ -1,11 +1,11 @@
 import { React } from 'react';
 import './TasteCard.css';
 
-const TasteCard = ({ hashtags, imgSrc }) => {
+const TasteCard = ({ hashtags, imgSrc, selected = false }) => {
   return (
     <div
       style={{
-        width: '242px',
+        width: selected ? '360px' : '242px',
         height: '330px',
         backgroundImage: `url(${imgSrc})`,
         backgroundSize: 'cover',
