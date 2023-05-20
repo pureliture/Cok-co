@@ -20,6 +20,22 @@ const Discovery = () => {
         className="mySwiper"
       >
         <SwiperSlide>
+          <div style={{ position: 'relative' }}>
+            <video height="256" loop autoPlay muted id="vid">
+              <source type="video/mp4" src="eevee.mp4"></source>
+              <source type="video/ogg" src="eevee.ogg"></source>
+            </video>
+            <DiscoveryCard
+              classname="test"
+              imgSrc="/bangkok.mp4"
+              title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
+              musicImgSrc="/stay_by_my_side.png"
+              musicTitle="Stay by My Side"
+              singer="Sionya"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <DiscoveryCard
             imgSrc="/bangkok.png"
             title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}

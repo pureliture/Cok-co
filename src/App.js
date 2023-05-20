@@ -30,7 +30,21 @@ const App = () => {
         <Route
           path="/home"
           element={
-            <Home username={username} locations={['동북아', '동남아']} />
+            <Home
+              username={username}
+              locations={['동북아', '동남아']}
+              num={0}
+            />
+          }
+        />
+        <Route
+          path="/test"
+          element={
+            <Home
+              username={username}
+              locations={['동북아', '동남아']}
+              num={1}
+            />
           }
         />
         <Route path="/stay/:id/detail" element={<DetailStay />} />

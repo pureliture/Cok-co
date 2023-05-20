@@ -5,15 +5,15 @@ import TopBar from 'components/TopBar';
 import Discovery from 'components/Discovery';
 // import { useNavigate } from 'react-router-dom';
 
-const Home = ({ username, locations }) => {
-  const selected = 0;
+const Home = ({ username, locations, num }) => {
+  // const selected = 1;
 
   return (
     <div className="page">
       <div style={{ margin: '50px 5px 20px 5px' }}>
-        <TopBar selected={selected} />
+        <TopBar selected={num} />
       </div>
-      {selected === 0 ? (
+      {num === 0 ? (
         <Recommend username={username} locations={locations} />
       ) : (
         <Discovery />

@@ -12,11 +12,12 @@ const DiscoveryCard = ({
   musicImgSrc,
   musicTitle,
   singer,
+  classname = '',
 }) => {
   if (size === 'l') {
     return (
       <div
-        className="l_discovery_card"
+        className={`l_discovery_card ${classname}`}
         style={{ backgroundImage: `url(${imgSrc})` }}
       >
         <div className="l_discovery_description">
