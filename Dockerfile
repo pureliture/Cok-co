@@ -9,5 +9,3 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "start"]
-
-# sudo docker build . -t tkdgur1756/cok-co:0.1
