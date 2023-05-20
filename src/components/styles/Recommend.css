@@ -8,7 +8,13 @@
   height: 16px !important;
 }
 
-.scroll {
+.scroll_x {
   display: flex;
   overflow-x: scroll;
+}
+
+.scroll_y {
+  /* display: flex;
+  flex-direction: column; */
+  overflow-y: scroll;
 }

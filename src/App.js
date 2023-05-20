@@ -6,7 +6,8 @@ import TasteCard from 'components/TasteCard';
 import CurationCard from 'components/CurationCard';
 import CurationCardEx from 'test/CurationCardEx';
 import Home from 'pages/Home';
-import DetailStay from 'components/DetailStay';
+import DetailStay from 'pages/DetailStay';
+import Step1 from 'components/Step1';
 
 const Splash = React.lazy(() => import('./pages/Splash'));
 
@@ -17,19 +18,20 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Splash />}></Route>
+        <Route exact path="/" element={<Splash />} />
+        <Route path="/step1" element={<Step1 />} />
         <Route
           path="/tasteCard"
           element={<TasteCard imgSrc={'/room1.png'} hashtags={hashtags} />}
-        ></Route>
+        />
         <Route
           path="/home"
           element={
             <Home username={username} locations={['동북아', '동남아']} />
           }
-        ></Route>
-        <Route path="/stay/:id/detail" element={<DetailStay />}></Route>
-        <Route path="/curationCardEx" element={<CurationCardEx />}></Route>
+        />
+        <Route path="/stay/:id/detail" element={<DetailStay />} />
+        <Route path="/curationCardEx" element={<CurationCardEx />} />
       </Routes>
     </BrowserRouter>
   );

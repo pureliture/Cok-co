@@ -47,6 +47,10 @@
   overflow: hidden;
 }
 
-.scroll::-webkit-scrollbar {
+.scroll_x::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll_y::-webkit-scrollbar {
   display: none;
 }

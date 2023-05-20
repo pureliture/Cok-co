@@ -1,15 +1,14 @@
 import { React } from 'react';
 import { useParams } from 'react-router-dom';
-import DetailCard from './DetailCard';
-import OneWord from './OneWord';
-import Subject from './Subject';
-import CurationCard from './CurationCard';
-import ViewCard from './ViewCard';
-import RoomCard from './RoomCard';
-import DiscoveryCard from './DiscoveryCard';
-import RadiusRect from './RadiusRect';
-import './styles/DetailStay.css';
-import OutLink from './OutLink';
+import DetailCard from '../components/DetailCard';
+import OneWord from '../components/OneWord';
+import Subject from '../components/Subject';
+import CurationCard from '../components/CurationCard';
+import ViewCard from '../components/ViewCard';
+import RoomCard from '../components/RoomCard';
+import DiscoveryCard from '../components/DiscoveryCard';
+import RadiusRect from '../components/RadiusRect';
+import OutLink from '../components/OutLink';
 
 const DetailStay = () => {
   // const { id } = useParams();
@@ -42,7 +41,7 @@ const DetailStay = () => {
           ></Subject>
         </div>
         <div
-          className="scroll"
+          className="scroll_x"
           style={{
             paddingBottom: '30px',
           }}
@@ -66,7 +65,7 @@ const DetailStay = () => {
           ></Subject>
         </div>
         <div
-          className="scroll"
+          className="scroll_x"
           style={{
             paddingBottom: '30px',
           }}

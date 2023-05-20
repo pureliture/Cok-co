@@ -11,6 +11,7 @@ const TasteCard = ({ hashtags, imgSrc }) => {
         backgroundSize: 'cover',
         borderRadius: '24px',
         position: 'relative',
+        margin: '2px auto',
       }}
     >
       <div className="hashtags">

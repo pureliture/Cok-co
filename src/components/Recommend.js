@@ -93,7 +93,7 @@ const Recommend = ({ username, locations }) => {
           ></Subject>
         </div>
         <div
-          className="scroll"
+          className="scroll_x"
           style={{ marginLeft: '30px', marginBottom: '50px' }}
         >
           <CountryBtn name="라오스" imgSrc="/laos_s.png" selected={true} />
@@ -203,7 +203,7 @@ const Recommend = ({ username, locations }) => {
           ></Subject>
         </div>
         <div
-          className="scroll"
+          className="scroll_x"
           style={{
             paddingBottom: '75px',
           }}

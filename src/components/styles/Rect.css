@@ -1,0 +1,9 @@
+.rect {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  font-weight: var(--semibold);
+}
