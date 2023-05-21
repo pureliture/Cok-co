@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './styles/Recommend.css';
+import MagazineCard from './MagazineCard';
 
 const Recommend = ({ username, locations }) => {
   return (
@@ -235,14 +236,15 @@ const Recommend = ({ username, locations }) => {
             description="월간 트리픽 매거진 Top5"
           ></Subject>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <MagazineCard imgSrc={'/magazine_april.png'} />
+        {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <CurationCard
             size="l"
             title="일박에 10만원 퀄리티는 100만원"
             imgSrc={'/ten_million.png'}
             bgColor="#EFE6D5"
           />
-        </div>
+        </div> */}
       </div>
       <div style={{ margin: '40px 0 50px 0' }}>
         <RadiusRect
