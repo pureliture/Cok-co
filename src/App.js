@@ -30,10 +30,7 @@ const App = () => {
         path="/tasteCard"
         element={<TasteCard imgSrc={'/room1.png'} hashtags={hashtags} />}
       />
-      <Route
-        path="/home"
-        element={<Home username={username} locations={['동북아', '동남아']} />}
-      />
+      <Route path="/home" element={<Home locations={['동북아', '동남아']} />} />
       <Route path="/like" element={<Like />} />
       <Route path="/mypage" element={<MyPage />} />
       <Route path="/stay/:id/detail" element={<DetailStay />} />

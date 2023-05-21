@@ -11,8 +11,11 @@ import 'swiper/css/pagination';
 import './styles/Recommend.css';
 import MagazineCard from './MagazineCard';
 import NavBar from './NavBar';
+import { useAppSelector } from 'app/hooks';
 
-const Recommend = ({ username, locations }) => {
+const Recommend = ({ locations }) => {
+  const { nickname } = useAppSelector((state) => state.signUp);
+
   return (
     <div style={{ position: 'relative' }}>
       <img
@@ -31,7 +34,7 @@ const Recommend = ({ username, locations }) => {
         <div style={{ margin: '30px' }}>
           <Subject
             subject="트리픽만의 룸 큐레이션"
-            description={`${username} 님을 위한 \n ${locations[0]} 룸 큐레이션`}
+            description={`${nickname} 님을 위한 \n ${locations[0]} 룸 큐레이션`}
           ></Subject>
         </div>
         <div
@@ -91,7 +94,7 @@ const Recommend = ({ username, locations }) => {
         <div style={{ padding: '30px' }}>
           <Subject
             subject="트리픽만의 숙소 큐레이션"
-            description={`${username} 님이 떠나고 싶을 ${locations[1]} 숙소 큐레이션`}
+            description={`${nickname} 님이 떠나고 싶을 ${locations[1]} 숙소 큐레이션`}
           ></Subject>
         </div>
         <div

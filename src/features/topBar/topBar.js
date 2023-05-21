@@ -9,7 +9,7 @@ const topBarSlice = createSlice({
   initialState,
   reducers: {
     change: (state, action) => {
-      state.tabValue = action.payload;
+      return { ...state, tabValue: action.payload };
     },
   },
 });

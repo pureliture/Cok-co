@@ -7,15 +7,40 @@ import Placeholder from 'components/Placeholder';
 import './styles/Step3.css';
 import Rect from 'components/Rect';
 import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { signUp, selectGender, setNickname } from 'features/signUp/signUp';
 
 const Step3 = () => {
-  const genderSelected = [true, false, false];
-  const disabled = true;
-
+  const { nickname, countryOfResidence, birthOrDate, gender } = useAppSelector(
+    (state) => state.signUp,
+  );
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
+  // const disabled = !nickname;
+  const disabled = false;
   const handleClick = () => {
+    if (disabled) {
+      return;
+    }
+
+    dispatch(
+      signUp({
+        nickname: nickname,
+        countryOfResidence: '',
+        birthOrDate: '',
+        gender: gender,
+      }),
+    );
     navigate('/home');
+  };
+
+  const nicknameHandleclick = (e) => {
+    dispatch(setNickname(e.target.value));
+  };
+
+  const genderHandleClick = (id) => {
+    dispatch(selectGender(id));
   };
 
   return (
@@ -43,7 +68,11 @@ const Step3 = () => {
             }}
           >
             <Placeholder title="닉네임" required={true} />
-            <input className="user_info_input" maxLength={10}></input>
+            <input
+              className="user_info_input"
+              maxLength={10}
+              onChange={nicknameHandleclick}
+            ></input>
           </div>
         </RadiusRect>
       </div>
@@ -122,24 +151,30 @@ const Step3 = () => {
               <RadiusRect
                 width="51px"
                 height="35px"
-                backgroundColor={genderSelected[0] ? 'black' : 'white'}
-                color={genderSelected[0] ? 'white' : 'black'}
+                backgroundColor={gender === 0 ? 'black' : 'white'}
+                color={gender === 0 ? 'white' : 'black'}
+                margin={'0 5px 0 0'}
+                onClick={() => genderHandleClick(0)}
               >
                 <div>여성</div>
               </RadiusRect>
               <RadiusRect
                 width="51px"
                 height="35px"
-                backgroundColor={genderSelected[1] ? 'black' : 'white'}
-                color={genderSelected[1] ? 'white' : 'black'}
+                backgroundColor={gender === 1 ? 'black' : 'white'}
+                color={gender === 1 ? 'white' : 'black'}
+                margin={'0 5px'}
+                onClick={() => genderHandleClick(1)}
               >
                 <div>남성</div>
               </RadiusRect>
               <RadiusRect
                 width="51px"
                 height="35px"
-                backgroundColor={genderSelected[2] ? 'black' : 'white'}
-                color={genderSelected[2] ? 'white' : 'black'}
+                backgroundColor={gender === 2 ? 'black' : 'white'}
+                color={gender === 2 ? 'white' : 'black'}
+                margin={'0 5px'}
+                onClick={() => genderHandleClick(2)}
               >
                 <div>기타</div>
               </RadiusRect>

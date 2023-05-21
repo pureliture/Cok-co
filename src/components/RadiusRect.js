@@ -8,12 +8,13 @@ const RadiusRect = ({
   backgroundColor = 'white',
   color = 'black',
   border = 'none',
+  margin,
   onClick,
 }) => {
   return (
     <div
       className="radius_rect"
-      style={{ width, height, backgroundColor, color, border }}
+      style={{ width, height, backgroundColor, color, border, margin }}
       onClick={onClick}
     >
       {children}
