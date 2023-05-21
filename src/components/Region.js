@@ -1,10 +1,22 @@
 import { React } from 'react';
 import './styles/Region.css';
 import RadiusRect from './RadiusRect';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { selected } from 'features/tasteRegion/tasteRegion';
 
-const Region = ({ region, count, selected = false, children }) => {
+const Region = ({ id, region, count, children }) => {
+  const selectedStatus = useAppSelector(
+    (state) => state.tasteRegion.selectedStatus,
+  );
+
+  const dispatch = useAppDispatch();
+
+  const handleClick = (id) => {
+    dispatch(selected(id));
+  };
+
   return (
-    <div className="region_wrapper">
+    <div className="region_wrapper" onClick={() => handleClick(id)}>
       <div
         style={{
           display: 'flex',
@@ -27,7 +39,7 @@ const Region = ({ region, count, selected = false, children }) => {
           </RadiusRect>
         </div>
         <img
-          src={selected ? '/check_full.png' : '/check.png'}
+          src={selectedStatus[id] ? '/check_full.png' : '/check.png'}
           style={{ width: '32px', height: '32px' }}
         />
       </div>

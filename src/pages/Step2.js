@@ -8,15 +8,25 @@ import CountryCard from 'components/CountryCard';
 import Region from 'components/Region';
 import RadiusRect from 'components/RadiusRect';
 import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { allSelected } from 'features/tasteRegion/tasteRegion';
 
 const Step2 = () => {
-  const disabled = true;
   const count = 4231;
-  const selected = true;
+  const selectedStatus = useAppSelector(
+    (state) => state.tasteRegion.selectedStatus,
+  );
+  const isAllSelected = selectedStatus.every((ele) => ele === true);
+
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/step3');
+  };
+
+  const allHandleClick = () => {
+    dispatch(allSelected());
   };
 
   return (
@@ -39,6 +49,7 @@ const Step2 = () => {
           height="100px"
           backgroundColor="black"
           color="white"
+          onClick={allHandleClick}
         >
           <div
             style={{
@@ -63,7 +74,7 @@ const Step2 = () => {
               </RadiusRect>
             </div>
             <img
-              src={selected ? '/check_full.png' : '/check.png'}
+              src={isAllSelected ? '/check_full.png' : '/check.png'}
               style={{ width: '32px', height: '32px' }}
             />
           </div>
@@ -72,7 +83,7 @@ const Step2 = () => {
       <div style={{ margin: '20px' }}>
         <Subject description="아시아 대륙" />
       </div>
-      <Region region="동북아" count={2121}>
+      <Region id={0} region="동북아" count={2121}>
         <CountryCard
           imgSrc={'/japan_2.png'}
           name="일본"
@@ -86,7 +97,7 @@ const Step2 = () => {
           backgroundColor="#8DAD9E"
         />
       </Region>
-      <Region region="동남아" count={1123}>
+      <Region id={1} region="동남아" count={1123}>
         <CountryCard
           imgSrc={'/singapore.png'}
           name="싱가포르"
@@ -100,7 +111,7 @@ const Step2 = () => {
           backgroundColor="#BADC94"
         />
       </Region>
-      <Region region="서남아" count={1048}>
+      <Region id={2} region="서남아" count={1048}>
         <CountryCard
           imgSrc={'/maldive.png'}
           name="몰디브"
@@ -117,17 +128,17 @@ const Step2 = () => {
       <div style={{ margin: '20px' }}>
         <Subject description="유럽 대륙" />
       </div>
-      <Region region="유럽" count={1048}>
+      <Region id={3} region="유럽" count={876}>
         <CountryCard
-          imgSrc={'/japan_2.png'}
-          name="일본"
-          count={821}
+          imgSrc={'/greece.png'}
+          name="그리스"
+          count={412}
           backgroundColor="#F0E0B5"
         />
         <CountryCard
-          imgSrc={'/taiwan.png'}
-          name="대만"
-          count={243}
+          imgSrc={'/nederland.png'}
+          name="네덜란드"
+          count={382}
           backgroundColor="#8DAD9E"
         />
       </Region>
