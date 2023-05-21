@@ -1,16 +1,32 @@
+.taste_card {
+  height: 330px;
+  background-size: cover;
+  border-radius: 24px;
+  position: relative;
+  margin: 2px auto;
+  background-size: cover;
+}
+
 .hashtags {
   width: 210px;
-  height: 72px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -105px;
+  bottom: 10px;
+  margin-left: 15px;
 }
 
 .hashtag {
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+
+.taste_check_img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 10px;
+  left: 115%;
+  margin-left: -105px;
 }
