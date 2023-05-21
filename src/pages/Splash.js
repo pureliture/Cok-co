@@ -11,7 +11,7 @@ const Splash = () => {
   }, []);
 
   return (
-    <div>
+    <div className="page">
       <img src="/splash.png"></img>
     </div>
   );

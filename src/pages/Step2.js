@@ -2,17 +2,22 @@ import { React } from 'react';
 import ProgressBar from '../components/ProgressBar';
 import Subject from '../components/Subject';
 import Question from '../components/Question';
-import TasteCard from '../components/TasteCard';
 import Rect from '../components/Rect';
 import GoBackBar from '../components/GoBackBar';
 import CountryCard from 'components/CountryCard';
 import Region from 'components/Region';
 import RadiusRect from 'components/RadiusRect';
+import { useNavigate } from 'react-router-dom';
 
 const Step2 = () => {
   const disabled = true;
   const count = 4231;
   const selected = true;
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/step3');
+  };
 
   return (
     <div className="page" style={{ minHeight: '720px', marginBottom: '102px' }}>
@@ -127,7 +132,7 @@ const Step2 = () => {
         />
       </Region>
       <div style={{ position: 'fixed', bottom: '0' }}>
-        <Rect height="52px" text="다음" />
+        <Rect height="52px" text="다음" onClick={handleClick} />
       </div>
     </div>
   );

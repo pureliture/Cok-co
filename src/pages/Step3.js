@@ -6,10 +6,17 @@ import RadiusRect from 'components/RadiusRect';
 import Placeholder from 'components/Placeholder';
 import './styles/Step3.css';
 import Rect from 'components/Rect';
+import { useNavigate } from 'react-router-dom';
 
 const Step3 = () => {
   const genderSelected = [true, false, false];
   const disabled = true;
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/home');
+  };
 
   return (
     <div className="page" style={{ minHeight: '720px', marginBottom: '102px' }}>
@@ -141,7 +148,12 @@ const Step3 = () => {
         </RadiusRect>
       </div>
       <div style={{ position: 'fixed', bottom: '0' }}>
-        <Rect height="52px" text="트리픽 시작하기" disabled={disabled} />
+        <Rect
+          height="52px"
+          text="트리픽 시작하기"
+          disabled={disabled}
+          onClick={handleClick}
+        />
       </div>
     </div>
   );

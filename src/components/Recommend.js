@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './styles/Recommend.css';
 import MagazineCard from './MagazineCard';
+import NavBar from './NavBar';
 
 const Recommend = ({ username, locations }) => {
   return (
@@ -260,6 +261,7 @@ const Recommend = ({ username, locations }) => {
           </RadiusRect>
         </RadiusRect>
       </div>
+      <NavBar menuIdx={0} />
     </div>
   );
 };

@@ -1,13 +1,19 @@
 import { React } from 'react';
 import ProgressBar from '../components/ProgressBar';
-import Subject from '../components/Subject';
 import Question from '../components/Question';
 import TasteCard from '../components/TasteCard';
 import Rect from '../components/Rect';
 import GoBackBar from '../components/GoBackBar';
+import { useNavigate } from 'react-router-dom';
 
 const Step1 = () => {
   const disabled = true;
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/step2');
+  };
 
   return (
     <div className="page" style={{ minHeight: '720px' }}>
@@ -45,6 +51,7 @@ const Step1 = () => {
           height="52px"
           disabled={disabled}
           text={disabled ? '취향을 선택해보세요' : '다음'}
+          onClick={handleClick}
         />
       </div>
     </div>

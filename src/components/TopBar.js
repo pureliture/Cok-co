@@ -1,6 +1,5 @@
 import { React } from 'react';
 import './TopBar.css';
-// import { useNavigate } from 'react-router-dom';
 
 const Tab = ({ selected }) => {
   return (

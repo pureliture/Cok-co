@@ -6,17 +6,18 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.nav_btn_img {
-  width: 24px;
-  height: 24px;
-}
-
 .nav_btn {
   height: 56px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.nav_btn_img {
+  width: 24px;
+  height: 24px;
 }
 
 .nav_selected {

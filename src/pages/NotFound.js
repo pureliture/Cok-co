@@ -1,11 +1,17 @@
 import { React } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './styles/NotFound.css';
 import Subject from 'components/Subject';
 import GoBackBar from 'components/GoBackBar';
 import RadiusRect from 'components/RadiusRect';
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/home');
+  };
+
   return (
     <div className="page" style={{ minHeight: '720px', marginBottom: '102px' }}>
       <GoBackBar />
@@ -28,7 +34,12 @@ const NotFound = () => {
         <div className="not_found_text">{`일시적인 시스템 오류로 \n 화면을 불러오지 못하였습니다`}</div>
         <div className="not_found_text">{`아래 ‘홈으로 돌아가기’ 버튼을 눌러 \n 재시도 부탁드립니다`}</div>
         <div style={{ margin: '70px auto 0 auto' }}>
-          <RadiusRect height="80px" backgroundColor="black" color="white">
+          <RadiusRect
+            height="80px"
+            backgroundColor="black"
+            color="white"
+            onClick={handleClick}
+          >
             <div>홈으로 돌아가기</div>
           </RadiusRect>
         </div>
