@@ -4,6 +4,7 @@ import Subject from './Subject';
 import RadiusRect from './RadiusRect';
 import './DetailCard.css';
 import LinearGradient from './LinearGradient';
+import BottomLinearGradient from './BottomLinearGradient';
 
 const DetailCard = ({ mainImgSrc, subImgSrc, title, location }) => {
   return (
@@ -11,6 +12,7 @@ const DetailCard = ({ mainImgSrc, subImgSrc, title, location }) => {
       className="detail_card"
       style={{ backgroundImage: `url(${mainImgSrc})` }}
     >
+      <BottomLinearGradient ratio={40} transparency={1} />
       <div className="detail_description">
         <Badge />
         <Subject description={title} color="white" fontSize="20px" />

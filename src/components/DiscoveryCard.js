@@ -4,6 +4,7 @@ import Subject from './Subject';
 import RadiusRect from './RadiusRect';
 import './DiscoveryCard.css';
 import LinearGradient from './LinearGradient';
+import BottomLinearGradient from './BottomLinearGradient';
 
 const DiscoveryCard = ({
   size = 'l',
@@ -20,6 +21,7 @@ const DiscoveryCard = ({
         className={`l_discovery_card ${classname}`}
         style={{ backgroundImage: `url(${imgSrc})` }}
       >
+        <BottomLinearGradient ratio={70} transparency={1} />
         <div className="l_discovery_description">
           <Badge />
           <Subject description={title} color="white" fontSize="20px" />
@@ -39,7 +41,6 @@ const DiscoveryCard = ({
             </RadiusRect>
           </div>
         </div>
-        {/* <LinearGradient /> */}
       </div>
     );
   } else if (size === 'm') {
@@ -48,6 +49,7 @@ const DiscoveryCard = ({
         className="m_discovery_card"
         style={{ backgroundImage: `url(${imgSrc})` }}
       >
+        <BottomLinearGradient ratio={60} transparency={1} />
         <div className="m_discovery_description">
           <Badge />
           <Subject description={title} color="white" fontSize="20px" />
@@ -63,7 +65,6 @@ const DiscoveryCard = ({
             </RadiusRect>
           </div>
         </div>
-        {/* <LinearGradient /> */}
       </div>
     );
   }

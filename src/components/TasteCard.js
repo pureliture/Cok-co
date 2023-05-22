@@ -2,6 +2,7 @@ import { React } from 'react';
 import { useAppDispatch, useAppSelector } from 'app/hooks';
 import { selected } from 'features/tasteRoom/tasteRoom';
 import './TasteCard.css';
+import BottomLinearGradient from './BottomLinearGradient';
 
 const TasteCard = ({ id, hashtags, imgSrc }) => {
   const selectedStatus = useAppSelector(
@@ -23,6 +24,7 @@ const TasteCard = ({ id, hashtags, imgSrc }) => {
       }}
       onClick={() => handleClick(id)}
     >
+      <BottomLinearGradient ratio={50} transparency={0.8} />
       <div>
         <div className="hashtags">
           {hashtags.map((hashtag, idx) => {
