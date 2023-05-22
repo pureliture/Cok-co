@@ -164,7 +164,7 @@ const DiscoveryGuide = () => {
                 textWidth="195px"
                 textHeight="72px"
               />
-            </SwiperSlide>{' '}
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>

@@ -1,0 +1,8 @@
+.rightTop {
+  width: 93px;
+  height: 93px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7));
+  border-top-right-radius: 24px;
+  position: absolute;
+  right: 0;
+}

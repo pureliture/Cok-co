@@ -15,7 +15,7 @@ import { useAppSelector } from 'app/hooks';
 
 const Recommend = ({ locations }) => {
   const { nickname } = useAppSelector((state) => state.signUp);
-
+  const status = useAppSelector((state) => state.like.status);
   return (
     <div style={{ position: 'relative' }}>
       <img
@@ -122,29 +122,34 @@ const Recommend = ({ locations }) => {
             paddingBottom: '20px',
           }}
         >
+          {console.log(status)}
           <CurationCard
             size="s"
             title="정글 하우스"
             imgSrc={'/junglehouse.png'}
             bgColor="#CFBA92"
+            id={0}
           />
           <CurationCard
             size="s"
             title="눈부신 풀장의 Mike"
             imgSrc={'/mike.png'}
             bgColor="#CFBA92"
+            id={1}
           />
           <CurationCard
             size="s"
             title="르 그랑 팍벵"
             imgSrc={'/legrangpakbaeng.png'}
             bgColor="#CFBA92"
+            id={2}
           />
           <CurationCard
             size="s"
             title="메콩 빌리지"
             imgSrc={'/mecongvillage.png'}
             bgColor="#CFBA92"
+            id={3}
           />
         </div>
       </div>

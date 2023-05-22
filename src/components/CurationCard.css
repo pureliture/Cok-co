@@ -45,6 +45,7 @@
   height: 158px !important;
   background-size: cover;
   border-radius: 24px;
+  position: relative;
 }
 
 .l_title {
@@ -77,4 +78,12 @@
   word-break: keep-all;
   white-space: pre-line;
   text-align: left;
+}
+
+.heart {
+  width: 19px;
+  height: 17px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }

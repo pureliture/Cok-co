@@ -8,6 +8,7 @@ import storage from 'redux-persist/lib/storage';
 
 import { combineReducers } from '@reduxjs/toolkit';
 import persistReducer from 'redux-persist/es/persistReducer';
+import like from 'features/like/like';
 
 const persistConfig = {
   key: 'root',
@@ -21,6 +22,7 @@ const reducer = combineReducers({
   tasteRoom: tasteRoom,
   tasteRegion: tasteRegion,
   signUp: signUp,
+  like: like,
   // discovery: discovery
 });
 
