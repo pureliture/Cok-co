@@ -16,6 +16,7 @@ import { useAppSelector } from 'app/hooks';
 const Recommend = ({ locations }) => {
   const { nickname } = useAppSelector((state) => state.signUp);
   const status = useAppSelector((state) => state.like.status);
+
   return (
     <div style={{ position: 'relative' }}>
       <img

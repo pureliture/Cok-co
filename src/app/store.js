@@ -13,7 +13,7 @@ import like from 'features/like/like';
 const persistConfig = {
   key: 'root',
   storage: storage,
-  whitelist: ['signUp'],
+  whitelist: ['signUp', 'like'],
   blacklist: ['tasteRoom', 'tasteRegion', 'topBar'],
 };
 

@@ -1,0 +1,20 @@
+.go_back_bar_white {
+  width: 314px;
+  margin: 30px 23px 10px 23px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_arrow_white {
+  width: 18px;
+  height: 16px;
+}
+
+.search_white {
+  width: 18px;
+  height: 18px;
+}

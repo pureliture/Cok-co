@@ -1,6 +1,6 @@
 import { React } from 'react';
-import './styles/GoBackBar.css';
 import { useNavigate } from 'react-router-dom';
+import './styles/GoBackBar.css';
 
 const GoBackBar = () => {
   const navigate = useNavigate();

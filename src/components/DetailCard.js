@@ -2,11 +2,19 @@ import { React } from 'react';
 import Badge from './Badge';
 import Subject from './Subject';
 import RadiusRect from './RadiusRect';
-import './DetailCard.css';
-import LinearGradient from './LinearGradient';
 import BottomLinearGradient from './BottomLinearGradient';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { clicked } from 'features/like/like';
+import './DetailCard.css';
 
-const DetailCard = ({ mainImgSrc, subImgSrc, title, location }) => {
+const DetailCard = ({ mainImgSrc, subImgSrc, title, location, id }) => {
+  const status = useAppSelector((state) => state.like.status);
+  const dispatch = useAppDispatch();
+
+  const handleClick = (id) => {
+    dispatch(clicked(id));
+  };
+
   return (
     <div
       className="detail_card"
@@ -16,6 +24,11 @@ const DetailCard = ({ mainImgSrc, subImgSrc, title, location }) => {
       <div className="detail_description">
         <Badge />
         <Subject description={title} color="white" fontSize="20px" />
+        <img
+          className="detail_stay_heart"
+          src={status[id] ? '/heart_full.png' : '/heart.png'}
+          onClick={() => handleClick(id)}
+        ></img>
         <div className="">
           <RadiusRect width="245px" height="32px">
             <div
@@ -38,7 +51,6 @@ const DetailCard = ({ mainImgSrc, subImgSrc, title, location }) => {
           right: '40px',
         }}
       />
-      {/* <LinearGradient /> */}
     </div>
   );
 };

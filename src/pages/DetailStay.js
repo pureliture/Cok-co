@@ -9,16 +9,21 @@ import RoomCard from '../components/RoomCard';
 import DiscoveryCard from '../components/DiscoveryCard';
 import RadiusRect from '../components/RadiusRect';
 import OutLink from '../components/OutLink';
+import GoBackBarWhite from 'components/GoBackBarWhite';
 
 const DetailStay = () => {
   // const { id } = useParams();
+  // console.log(id);
+
   return (
     <div className="page">
+      <GoBackBarWhite />
       <DetailCard
         mainImgSrc="/mecongvillage.png"
         subImgSrc="/laos_s.png"
         title={`라오스의 거대한 자연아래 \n 메콩 빌리지 (르 그랑 팍벵)`}
         location="Pak Beng, Oudomxay Province, 라오스"
+        id={2}
       />
       <OneWord
         words={[
