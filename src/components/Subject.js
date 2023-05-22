@@ -9,10 +9,17 @@ const Subject = ({
   color = 'black',
   fontSize = '24px',
   textAlign = 'left',
+  subjectTextAlign = 'left',
 }) => {
   return (
     <div>
-      {subject ? <div className="subject">{subject}</div> : <></>}
+      {subject ? (
+        <div className="subject" style={{ textAlign: subjectTextAlign }}>
+          {subject}
+        </div>
+      ) : (
+        <></>
+      )}
       <div className="description" style={{ color, fontSize, textAlign }}>
         {description}
       </div>

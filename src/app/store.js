@@ -21,6 +21,7 @@ const reducer = combineReducers({
   tasteRoom: tasteRoom,
   tasteRegion: tasteRegion,
   signUp: signUp,
+  // discovery: discovery
 });
 
 const persistedReducer = persistReducer(persistConfig, reducer);

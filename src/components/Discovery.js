@@ -8,8 +8,10 @@ import 'swiper/css/pagination';
 
 import './Discovery.css';
 import NavBar from './NavBar';
+import DiscoveryGuideCard from './DiscoveryGuideCard';
+import Subject from './Subject';
 
-const Discovery = () => {
+const DiscoverySwipe = () => {
   return (
     <div>
       <div style={{ height: '601px' }}>
@@ -22,21 +24,21 @@ const Discovery = () => {
           className="mySwiper"
         >
           {/* <SwiperSlide>
-          <div style={{ position: 'relative' }}>
-            <video height="256" loop autoPlay muted id="vid">
-              <source type="video/mp4" src="eevee.mp4"></source>
-              <source type="video/ogg" src="eevee.ogg"></source>
-            </video>
-            <DiscoveryCard
-              classname="test"
-              imgSrc="/bangkok.mp4"
-              title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
-              musicImgSrc="/stay_by_my_side.png"
-              musicTitle="Stay by My Side"
-              singer="Sionya"
-            />
-          </div>
-        </SwiperSlide> */}
+      <div style={{ position: 'relative' }}>
+        <video height="256" loop autoPlay muted id="vid">
+          <source type="video/mp4" src="eevee.mp4"></source>
+          <source type="video/ogg" src="eevee.ogg"></source>
+        </video>
+        <DiscoveryCard
+          classname="test"
+          imgSrc="/bangkok.mp4"
+          title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
+          musicImgSrc="/stay_by_my_side.png"
+          musicTitle="Stay by My Side"
+          singer="Sionya"
+        />
+      </div>
+    </SwiperSlide> */}
           <SwiperSlide>
             <Swiper className="mySwiper">
               <SwiperSlide>
@@ -122,6 +124,59 @@ const Discovery = () => {
       <NavBar menuIdx={0} />
     </div>
   );
+};
+
+const DiscoveryGuide = () => {
+  return (
+    <div>
+      <div className="discovery_guide">
+        <div style={{ margin: '30px' }}>
+          <Subject
+            subject="트리픽이 검증한"
+            description={`고퀄리티 글로벌 숙소를 \n 발견해보세요!`}
+          />
+        </div>
+        <div style={{ height: '400px' }}>
+          <Swiper className="">
+            <SwiperSlide>
+              <DiscoveryGuideCard
+                imgSrcList={['/compass_perspective.png', '/text_1.png']}
+                width="161.39px"
+                height="161.39px"
+                textWidth="195px"
+                textHeight="72px"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <DiscoveryGuideCard
+                imgSrcList={['/magnifying_glass_right.png', '/text_1.png']}
+                width="210.11px"
+                height="210.11px"
+                textWidth="195px"
+                textHeight="72px"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <DiscoveryGuideCard
+                imgSrcList={['/heart_perspective.png', '/text_1.png']}
+                width="204.48px"
+                height="204.48px"
+                textWidth="195px"
+                textHeight="72px"
+              />
+            </SwiperSlide>{' '}
+          </Swiper>
+        </div>
+      </div>
+      <NavBar menuIdx={0} />
+    </div>
+  );
+};
+
+const Discovery = () => {
+  const isFistTime = true;
+  // return <>{isFistTime ? <DiscoveryGuide /> : <DiscoverySwipe />}</>;
+  return <DiscoverySwipe />;
 };
 
 export default Discovery;

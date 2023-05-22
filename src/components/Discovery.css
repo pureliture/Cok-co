@@ -25,3 +25,13 @@
   position: absolute;
   margin-top: -300px;
 }
+
+.discovery_guide {
+  /* width: 360px; */
+  width: 100%;
+  height: 601px;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}

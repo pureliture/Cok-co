@@ -16,20 +16,18 @@ const Tab = ({ tabIdx }) => {
 
   return (
     <div className="tab">
-      <>
-        <div
-          className={tabIdx === 0 ? 'top_selected' : 'top_unselected'}
-          onClick={recommendHandleClick}
-        >
-          추천
-        </div>
-        <div
-          className={tabIdx === 0 ? 'top_unselected' : 'top_selected'}
-          onClick={discoveryHandleClick}
-        >
-          발견
-        </div>
-      </>
+      <div
+        className={tabIdx === 0 ? 'top_selected' : 'top_unselected'}
+        onClick={recommendHandleClick}
+      >
+        추천
+      </div>
+      <div
+        className={tabIdx === 0 ? 'top_unselected' : 'top_selected'}
+        onClick={discoveryHandleClick}
+      >
+        발견
+      </div>
     </div>
   );
 };
