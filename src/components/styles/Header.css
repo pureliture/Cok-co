@@ -1,0 +1,19 @@
+.header {
+  width: 360px;
+  height: 90px;
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header_btn {
+  width: 40px;
+  height: 40px;
+}

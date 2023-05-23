@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  status: [false, false, false, false],
+  status: [false, false, false, false, true, true, true, true, true],
+  tabIdx: 0,
 };
 
 const likeSlice = createSlice({
@@ -16,8 +17,11 @@ const likeSlice = createSlice({
         ),
       };
     },
+    tabSelected: (state, action) => {
+      return { ...state, tabIdx: action.payload };
+    },
   },
 });
 
-export const { clicked } = likeSlice.actions;
+export const { clicked, tabSelected } = likeSlice.actions;
 export default likeSlice.reducer;

@@ -1,0 +1,65 @@
+.like_tab {
+  width: 360px;
+  display: flex;
+  text-align: center;
+}
+
+.like_tab_selected {
+  width: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.like_tab_unselected {
+  width: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8e8e8e;
+  border-bottom: 2px solid #8e8e8e;
+}
+
+.ad {
+  width: 360px;
+  height: 107px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ad_img {
+  width: 120px;
+  height: 79px;
+}
+
+.ad_text1 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8e8e8e;
+}
+
+.ad_text2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.filter_wrapper {
+  display: flex;
+  overflow-x: scroll;
+  margin: 20px 0 20px 20px;
+}
+
+.filter {
+  min-width: 49px;
+  width: max-content;
+  height: 33px;
+  background-color: #f2f2f2;
+  margin: 0 5px 0 0;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: var(--medium);
+  text-align: center;
+  line-height: 33px;
+}

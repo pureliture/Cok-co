@@ -1,38 +1,57 @@
 export const stay = [
   {
     stayId: 0,
-    name: '정글 하우스',
+    title: '정글 하우스',
+    imgSrc: '/junglehouse.png',
   },
   {
     stayId: 1,
-    name: '눈부신 풀장의 Mike',
+    title: '눈부신 풀장의 Mike',
+    imgSrc: '/mike.png',
   },
   {
     stayId: 2,
-    name: '르 그랑 팍벵',
+    title: '르 그랑 팍벵',
+    imgSrc: '/legrangpakbaeng.png',
   },
   {
     stayId: 3,
-    name: '메콩 빌리지',
+    title: '메콩 빌리지',
+    imgSrc: '/mecongvillage.png',
   },
   {
     stayId: 4,
-    name: 'Moonlight Tree 타운하우스',
+    title: 'Moonlight Tree 타운하우스',
+    imgSrc: '/moonlight_tree.png',
   },
   {
     stayId: 5,
-    name: 'Rajasthan 리조트&호텔 Inida',
+    title: 'Rajasthan 리조트&호텔 Inida',
+    imgSrc: '/rajasthan.png',
   },
   {
     stayId: 6,
-    name: 'Paris QSRA',
+    title: 'Paris QSRA',
+    imgSrc: '/paris_qsra.png',
   },
   {
     stayId: 7,
-    name: '모잠비크 하우스',
+    title: '모잠비크 하우스',
+    imgSrc: '/mojambiq.png',
   },
   {
     stayId: 8,
-    name: 'Natural Planet 리조트',
+    title: 'Natural Planet 리조트',
+    imgSrc: '/natural_planet.png',
   },
+];
+
+export const countryFilter = [
+  '전체',
+  '일본',
+  '대만',
+  '라오스',
+  '필리핀',
+  '싱가포르',
+  '캄보디아',
 ];

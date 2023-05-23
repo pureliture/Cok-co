@@ -13,7 +13,6 @@ import GoBackBarWhite from 'components/GoBackBarWhite';
 
 const DetailStay = () => {
   // const { id } = useParams();
-  // console.log(id);
 
   return (
     <div className="page">

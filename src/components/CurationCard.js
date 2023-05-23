@@ -6,6 +6,7 @@ import { clicked } from 'features/like/like';
 import { useAppSelector } from 'app/hooks';
 import { useNavigate } from 'react-router-dom';
 import RightTopLinearGradient from './RightTopLinearGradient';
+import { stay } from 'constant';
 
 const CurationCard = ({ size, title, imgSrc, bgColor, id }) => {
   const navigate = useNavigate();
@@ -13,11 +14,12 @@ const CurationCard = ({ size, title, imgSrc, bgColor, id }) => {
   const status = useAppSelector((state) => state.like.status);
   const dispatch = useAppDispatch();
 
-  const sLikeHandleClick = (id) => {
+  const sLikeHandleClick = (e) => {
     dispatch(clicked(id));
+    e.stopPropagation();
   };
 
-  const sHandleClick = (id) => {
+  const sHandleClick = () => {
     navigate(`/stay/${id}/detail`);
   };
 
@@ -58,22 +60,22 @@ const CurationCard = ({ size, title, imgSrc, bgColor, id }) => {
         style={{
           backgroundColor: 'transparent',
         }}
-        onClick={() => sHandleClick(id)}
       >
         <div
           className="s_main_img"
-          style={{ backgroundImage: `url(${imgSrc})` }}
+          style={{ backgroundImage: `url(${stay[id].imgSrc})` }}
+          onClick={sHandleClick}
         >
-          <RightTopLinearGradient />
+          <RightTopLinearGradient onClick={sHandleClick} />
           <img
             className="heart"
             src={status[id] ? '/heart_full.png' : '/heart.png'}
-            onClick={() => sLikeHandleClick(id)}
+            onClick={sLikeHandleClick}
           ></img>
         </div>
         <div className="s_title">
           <Badge />
-          <div className="title">{title}</div>
+          <div className="title">{stay[id].title}</div>
         </div>
       </div>
     );

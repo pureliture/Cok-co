@@ -54,3 +54,7 @@
 .scroll_y::-webkit-scrollbar {
   display: none;
 }
+
+.filter_wrapper::-webkit-scrollbar {
+  display: none;
+}
