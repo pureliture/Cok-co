@@ -67,7 +67,7 @@ const Filter = () => {
   );
 };
 const Like = () => {
-  const status = useAppSelector((state) => state.like.status);
+  const { status, tabIdx } = useAppSelector((state) => state.like);
 
   return (
     <div className="page">
@@ -75,32 +75,23 @@ const Like = () => {
       <Tab />
       <Ad />
       <Filter />
-      {console.log(
-        status
-          .map((ele, i) => {
-            if (ele === true) return i;
-            else return -1;
-          })
-          .filter((ele) => ele != -1),
+      {tabIdx == 0 ? (
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="like_grid">
+            {status
+              .map((ele, i) => {
+                if (ele === true) return i;
+                else return -1;
+              })
+              .filter((ele) => ele != -1)
+              .map((ele, i) => {
+                return <CurationCard key={i} size="s" id={ele} />;
+              })}
+          </div>
+        </div>
+      ) : (
+        <></>
       )}
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          paddingBottom: '20px',
-        }}
-      >
-        {status
-          .map((ele, i) => {
-            if (ele === true) return i;
-            else return -1;
-          })
-          .filter((ele) => ele != -1)
-          .map((ele, i) => {
-            return <CurationCard key={i} size="s" id={ele} />;
-          })}
-      </div>
       <NavBar menuIdx={1} />
     </div>
   );

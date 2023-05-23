@@ -63,3 +63,10 @@
   text-align: center;
   line-height: 33px;
 }
+
+.like_grid {
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
