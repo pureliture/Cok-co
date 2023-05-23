@@ -123,34 +123,10 @@ const Recommend = ({ locations }) => {
             paddingBottom: '20px',
           }}
         >
-          <CurationCard
-            size="s"
-            // title="정글 하우스"
-            // imgSrc={'/junglehouse.png'}
-            // bgColor="#CFBA92"
-            id={0}
-          />
-          <CurationCard
-            size="s"
-            // title="눈부신 풀장의 Mike"
-            // imgSrc={'/mike.png'}
-            // bgColor="#CFBA92"
-            id={1}
-          />
-          <CurationCard
-            size="s"
-            // title="르 그랑 팍벵"
-            // imgSrc={'/legrangpakbaeng.png'}
-            // bgColor="#CFBA92"
-            id={2}
-          />
-          <CurationCard
-            size="s"
-            // title="메콩 빌리지"
-            // imgSrc={'/mecongvillage.png'}
-            // bgColor="#CFBA92"
-            id={3}
-          />
+          <CurationCard size="s" id={0} />
+          <CurationCard size="s" id={1} />
+          <CurationCard size="s" id={2} />
+          <CurationCard size="s" id={3} />
         </div>
       </div>
       <div style={{ backgroundColor: 'black', position: 'relative' }}>
@@ -163,7 +139,6 @@ const Recommend = ({ locations }) => {
             position: 'absolute',
             top: '10px',
             right: '-50px',
-            // zIndex: '-100',
           }}
         ></img>
         <div style={{ padding: '100px 30px 30px 30px' }}>

@@ -85,7 +85,14 @@ const Like = () => {
               })
               .filter((ele) => ele != -1)
               .map((ele, i) => {
-                return <CurationCard key={i} size="s" id={ele} />;
+                return (
+                  <CurationCard
+                    key={i}
+                    size="s"
+                    id={ele}
+                    badgeColor={'#E9E9E9'}
+                  />
+                );
               })}
           </div>
         </div>

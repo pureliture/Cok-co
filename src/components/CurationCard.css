@@ -17,7 +17,8 @@
 
 .s_card {
   width: 158px;
-  height: 220px;
+  /* height: 220px; */
+  height: 244px;
   border-radius: 24px;
   display: flex;
   flex-direction: column;

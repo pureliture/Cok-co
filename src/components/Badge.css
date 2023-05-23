@@ -1,4 +1,20 @@
+.badge {
+  display: inline-flex;
+  height: 20px;
+  border-radius: 24px;
+  align-items: center;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.badge_who {
+  font-size: 10px;
+  font-weight: var(--semibold);
+  margin: 10px 2px 10px 7px;
+}
+
 .badge_img {
-  width: 54px !important;
-  height: 20px !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 7px;
 }

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import RightTopLinearGradient from './RightTopLinearGradient';
 import { stay } from 'constant';
 
-const CurationCard = ({ size, title, imgSrc, bgColor, id }) => {
+const CurationCard = ({ size, title, imgSrc, bgColor, id, badgeColor }) => {
   const navigate = useNavigate();
 
   const status = useAppSelector((state) => state.like.status);
@@ -74,7 +74,7 @@ const CurationCard = ({ size, title, imgSrc, bgColor, id }) => {
           ></img>
         </div>
         <div className="s_title">
-          <Badge />
+          <Badge backgroundColor={badgeColor} />
           <div className="title">{stay[id].title}</div>
         </div>
       </div>
