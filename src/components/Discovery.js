@@ -10,13 +10,37 @@ import './Discovery.css';
 import NavBar from './NavBar';
 import Subject from './Subject';
 import { useAppDispatch, useAppSelector } from 'app/hooks';
-import { setIsFirstTime } from 'features/discovery/discovery';
+import { setIsFirstTime, setMutedStatus } from 'features/discovery/discovery';
 
 const DiscoverySwipe = () => {
+  const { mustedStatus } = useAppSelector((state) => state.discovery);
+  const dispatch = useAppDispatch();
+
+  const handleChange = ({ realIndex }) => {
+    console.log(realIndex);
+    dispatch(setMutedStatus(realIndex + 2));
+  };
+  const firstRowHandleChange = ({ realIndex }) => {
+    console.log('real', realIndex);
+
+    // dispatch(setMutedStatus(realIndex + 0));
+  };
+  const secondRowHandleChange = ({ realIndex }) => {
+    console.log('real', realIndex);
+    // dispatch(setMutedStatus(realIndex + 2));
+  };
+  const thirdRowHandleChange = ({ realIndex }) => {
+    console.log('real', realIndex);
+
+    // dispatch(setMutedStatus(realIndex + 4));
+  };
+
   return (
     <div>
+      {console.log(mustedStatus)}
       <div style={{ height: '601px' }}>
         <Swiper
+          onActiveIndexChange={handleChange}
           direction={'vertical'}
           pagination={{
             clickable: true,
@@ -24,54 +48,43 @@ const DiscoverySwipe = () => {
           // modules={[Pagination]}
           className="mySwiper"
         >
-          {/* <SwiperSlide>
-      <div style={{ position: 'relative' }}>
-        <video height="256" loop autoPlay muted id="vid">
-          <source type="video/mp4" src="eevee.mp4"></source>
-          <source type="video/ogg" src="eevee.ogg"></source>
-        </video>
-        <DiscoveryCard
-          classname="test"
-          imgSrc="/bangkok.mp4"
-          title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
-          musicImgSrc="/stay_by_my_side.png"
-          musicTitle="Stay by My Side"
-          singer="Sionya"
-        />
-      </div>
-    </SwiperSlide> */}
           <SwiperSlide>
-            <Swiper>
+            <Swiper onActiveIndexChange={firstRowHandleChange}>
               <SwiperSlide>
+                {/* <div style={{ position: 'relative' }}>
+                  <video
+                    style={{ zIndex: -100 }}
+                    height="601px"
+                    loop
+                    autoPlay
+                    muted={mustedStatus[0]}
+                    id="vid"
+                  >
+                    <source type="video/mp4" src="11.mp4"></source>
+                    <source type="video/ogg" src="11.ogg"></source>
+                  </video> */}
                 <DiscoveryCard
+                  // classname="test"
                   imgSrc="/bangkok.png"
                   title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
                   musicImgSrc="/stay_by_my_side.png"
                   musicTitle="Stay by My Side"
                   singer="Sionya"
                 />
+                {/* </div> */}
               </SwiperSlide>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-            </Swiper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Swiper className="mySwiper">
               <SwiperSlide>
                 <DiscoveryCard
-                  imgSrc="/europehouse.png"
-                  title={`따뜻한 다이닝이 준비된 \n 유럽 중산층 가정집`}
-                  musicImgSrc="/how_to_carry_on.png"
-                  musicTitle="How to Carry On"
-                  singer="Wildflow"
+                  imgSrc="/greece_hotel.png"
+                  title={`2023 꼭 가야할 그리스 호텔 \n The Palms Turks and Caicos`}
+                  musicImgSrc="/stockholm.png"
+                  musicTitle="Stockholm"
+                  singer="Revel Day"
                 />
               </SwiperSlide>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
             </Swiper>
           </SwiperSlide>
+
           <SwiperSlide>
             <Swiper className="mySwiper">
               <SwiperSlide>
@@ -83,25 +96,15 @@ const DiscoverySwipe = () => {
                   singer="Velvet"
                 />
               </SwiperSlide>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-            </Swiper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Swiper className="mySwiper">
               <SwiperSlide>
                 <DiscoveryCard
-                  imgSrc="/greece_hotel.png"
-                  title={`2023 꼭 가야할 그리스 호텔 \n The Palms Turks and Caicos`}
-                  musicImgSrc="/stockholm.png"
-                  musicTitle="Stockholm"
-                  singer="Revel Day"
+                  imgSrc="/europehouse.png"
+                  title={`따뜻한 다이닝이 준비된 \n 유럽 중산층 가정집`}
+                  musicImgSrc="/how_to_carry_on.png"
+                  musicTitle="How to Carry On"
+                  singer="Wildflow"
                 />
               </SwiperSlide>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
             </Swiper>
           </SwiperSlide>
           <SwiperSlide>
@@ -115,9 +118,6 @@ const DiscoverySwipe = () => {
                   singer="CLGR"
                 />
               </SwiperSlide>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
             </Swiper>
           </SwiperSlide>
         </Swiper>
