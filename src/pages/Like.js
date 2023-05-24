@@ -57,6 +57,7 @@ const Filter = ({ list }) => {
           <div
             className="filter"
             key={i}
+            style={{ border: i == 0 ? '1px solid black' : '' }}
             // onClick={() => genderHandleClick(0)}
           >
             {ele}
@@ -74,6 +75,16 @@ const Like = () => {
       <Header title="좋아요" />
       <Tab />
       <Ad />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          margin: '25px 25px 0 25px',
+        }}
+      >
+        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>전체 21개</div>
+        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>편집</div>
+      </div>
       <Filter list={countryFilter} />
       {tabIdx == 0 ? (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
