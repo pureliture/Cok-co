@@ -4,14 +4,11 @@ import DetailCard from '../components/DetailCard';
 import OneWord from '../components/OneWord';
 import Subject from '../components/Subject';
 import CurationCard from '../components/CurationCard';
-import ViewCard from '../components/ViewCard';
 import RoomCard from '../components/RoomCard';
 import DiscoveryCard from '../components/DiscoveryCard';
 import RadiusRect from '../components/RadiusRect';
 import OutLink from '../components/OutLink';
 import GoBackBarWhite from 'components/GoBackBarWhite';
-import { stay } from 'constant';
-import Badge from 'components/Badge';
 import SpecGuide from 'components/SpecGuide';
 
 const DetailStay = () => {
@@ -38,7 +35,7 @@ const DetailStay = () => {
           '가성비 좋은 자연 휴양지로 떠나고 싶다면 \n 라오스를 추천드리고 싶어요🍀',
           '그 중에서도 프라이빗한 장소에서 가장 멋진 마운틴 뷰를 감상할 수 있는 완벽한 숙소를 소개해드릴게요🥰',
           '이름도 귀여운 메콩 빌리지는 \n 현지인 친구의 추천으로 검증 방문하였어요. \n 라오스 가성비 Top3안에 드는 숙소인 만큼 \n Tripic 만족도도 아주 높았죠.',
-          '자, 이제 상세한 숙소 스팩을 소개드릴게요🥳',
+          '자, 이제 상세한 숙소 스펙을 소개드릴게요🥳',
         ]}
       />
       <div
@@ -139,8 +136,8 @@ const DetailStay = () => {
           >
             <DiscoveryCard
               size="m"
-              imgSrc="/bangkok.png"
-              title={`요즘 태국 방콕에서 가성비로 \n 난리난 호텔`}
+              imgSrc="/laos.png"
+              title={`요즘 라오스에서 가성비로 \n 난리난 호텔`}
               musicImgSrc="/evergreen.png"
               musicTitle="Evergreen"
               singer="dazeychain"
@@ -180,7 +177,9 @@ const DetailStay = () => {
         </div>
       </> */}
       <div style={{ margin: '50px 0' }}>
-        <Subject description="예약 가능 링크" color="black"></Subject>
+        <div style={{ margin: '30px' }}>
+          <Subject description="예약 가능 링크" color="black"></Subject>
+        </div>
         <OutLink name="아고다" imgSrc="/agoda.png" />
         <OutLink name="부킹닷컴" imgSrc="/bookingdotcom.png" />
         <OutLink name="에어비앤비" imgSrc="/airbnb.png" />
