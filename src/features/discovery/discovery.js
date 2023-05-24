@@ -1,18 +1,18 @@
-// import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
-// const initialState = {
-//   tabValue: 0,
-// };
+const initialState = {
+  isFirstTime: true,
+};
 
-// const discoverySlice = createSlice({
-//   name: 'discovery',
-//   initialState,
-//   reducers: {
-//     : (state, action) => {
-//       return { ...state, tabValue: action.payload };
-//     },
-//   },
-// });
+const discoverySlice = createSlice({
+  name: 'discovery',
+  initialState,
+  reducers: {
+    setIsFirstTime: (state) => {
+      return { ...state, isFirstTime: false };
+    },
+  },
+});
 
-// export const { change } = discoverySlice.actions;
-// export default discoverySlice.reducer;
+export const { setIsFirstTime } = discoverySlice.actions;
+export default discoverySlice.reducer;

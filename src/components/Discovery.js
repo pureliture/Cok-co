@@ -8,8 +8,9 @@ import 'swiper/css/pagination';
 
 import './Discovery.css';
 import NavBar from './NavBar';
-import DiscoveryGuideCard from './DiscoveryGuideCard';
 import Subject from './Subject';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { setIsFirstTime } from 'features/discovery/discovery';
 
 const DiscoverySwipe = () => {
   return (
@@ -127,6 +128,11 @@ const DiscoverySwipe = () => {
 };
 
 const DiscoveryGuide = () => {
+  const dispatch = useAppDispatch();
+  const handleStartDiscoveryClick = () => {
+    dispatch(setIsFirstTime());
+  };
+
   return (
     <div>
       <div className="discovery_guide">
@@ -139,31 +145,32 @@ const DiscoveryGuide = () => {
         <div style={{ height: '400px' }}>
           <Swiper className="">
             <SwiperSlide>
-              <DiscoveryGuideCard
-                imgSrcList={['/compass_perspective.png', '/text_1.png']}
-                width="161.39px"
-                height="161.39px"
-                textWidth="195px"
-                textHeight="72px"
-              />
+              {/* <div className="discovery_guide_card">
+                <div style={{ padding: '20px' }}>
+                  <img
+                    src="/compass_perspective.png"
+                    style={{ width: '195px', height: '279.69px' }}
+                  ></img>
+                </div>
+                <div className="discovery_guide_card_btn">다음</div>
+              </div> */}
+              <img
+                className="discovery_guide_card_btn"
+                src="/compass_perspective.png"
+              ></img>
             </SwiperSlide>
             <SwiperSlide>
-              <DiscoveryGuideCard
-                imgSrcList={['/magnifying_glass_right.png', '/text_1.png']}
-                width="210.11px"
-                height="210.11px"
-                textWidth="195px"
-                textHeight="72px"
-              />
+              <img
+                className="discovery_guide_card_btn"
+                src="/magnifying_glass_right.png"
+              ></img>
             </SwiperSlide>
             <SwiperSlide>
-              <DiscoveryGuideCard
-                imgSrcList={['/heart_perspective.png', '/text_1.png']}
-                width="204.48px"
-                height="204.48px"
-                textWidth="195px"
-                textHeight="72px"
-              />
+              <img
+                className="discovery_guide_card_btn"
+                src="/heart_perspective.png"
+                onClick={handleStartDiscoveryClick}
+              ></img>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -174,9 +181,8 @@ const DiscoveryGuide = () => {
 };
 
 const Discovery = () => {
-  const isFistTime = true;
-  // return <>{isFistTime ? <DiscoveryGuide /> : <DiscoverySwipe />}</>;
-  return <DiscoverySwipe />;
+  const { isFirstTime } = useAppSelector((state) => state.discovery);
+  return <>{isFirstTime ? <DiscoveryGuide /> : <DiscoverySwipe />}</>;
 };
 
 export default Discovery;
