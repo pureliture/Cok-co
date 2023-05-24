@@ -39,7 +39,7 @@
 
 .page {
   width: 360px;
-  min-height: 740px;
+  min-height: 800px;
   margin: 0 auto;
   background-color: white;
   display: flex;
