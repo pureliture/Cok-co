@@ -4,7 +4,7 @@ FROM node:alpine as builder
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
-RUN yarn install --silent
+RUN yarn
 RUN yarn add react-scripts@5.0.1 -g --silent
 
 # 소스를 작업폴더로 복사하고 빌드
