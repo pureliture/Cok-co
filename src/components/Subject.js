@@ -7,6 +7,7 @@ const Subject = ({
   subject,
   description,
   color = 'black',
+  subjectFontSize = '14px',
   fontSize = '24px',
   textAlign = 'left',
   subjectTextAlign = 'left',
@@ -14,7 +15,10 @@ const Subject = ({
   return (
     <div>
       {subject ? (
-        <div className="subject" style={{ textAlign: subjectTextAlign }}>
+        <div
+          className="subject"
+          style={{ textAlign: subjectTextAlign, fontSize: subjectFontSize }}
+        >
           {subject}
         </div>
       ) : (

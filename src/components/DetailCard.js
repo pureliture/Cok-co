@@ -41,16 +41,6 @@ const DetailCard = ({ mainImgSrc, subImgSrc, title, location, id }) => {
           </RadiusRect>
         </div>
       </div>
-      <img
-        src="/speech_bubble.png"
-        style={{
-          width: '45px',
-          height: '33px',
-          position: 'absolute',
-          bottom: 0,
-          right: '40px',
-        }}
-      />
     </div>
   );
 };

@@ -58,3 +58,7 @@
 .filter_wrapper::-webkit-scrollbar {
   display: none;
 }
+
+.spec_guide_drawer::-webkit-scrollbar {
+  display: none;
+}

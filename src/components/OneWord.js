@@ -7,11 +7,22 @@ const OneWord = ({ words }) => {
       <div className="one_word">Tripic 한마디</div>
       {words.map((word, idx) => {
         return (
-          <p key={idx} className="word">
+          <div key={idx} className="word">
             {word}
-          </p>
+          </div>
         );
       })}
+      <img
+        src="/speech_bubble.png"
+        style={{
+          width: '65px',
+          height: '48px',
+          position: 'absolute',
+          // bottom: -70,
+          right: 50,
+          bottom: -48,
+        }}
+      />
     </div>
   );
 };
