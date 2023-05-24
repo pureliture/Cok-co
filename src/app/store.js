@@ -11,6 +11,7 @@ import persistReducer from 'redux-persist/es/persistReducer';
 import like from 'features/like/like';
 import recommend from 'features/recommend/recommend';
 import discovery from 'features/discovery/discovery';
+import detailStay from 'features/detailStay/detailStay';
 
 const persistConfig = {
   key: 'root',
@@ -23,6 +24,7 @@ const persistConfig = {
     'likeTab',
     'recommend',
     'discovery',
+    'detailStay',
   ],
 };
 
@@ -34,6 +36,7 @@ const reducer = combineReducers({
   like: like,
   recommend: recommend,
   discovery: discovery,
+  detailStay: detailStay,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducer);

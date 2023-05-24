@@ -112,11 +112,13 @@ const DetailStay = () => {
             imgSrc={'/mountain_view.png'}
             title={`마운틴뷰가 가장 좋은 \n  Mountain Villa`}
             price={'130,252'}
+            id={0}
           />
           <RoomCard
             imgSrc={'/veranda.png'}
             title={`깨끗한 컨디션을 자랑하는 \n Presidentail Suite`}
             price={'128,342'}
+            id={1}
           />
         </div>
         <>

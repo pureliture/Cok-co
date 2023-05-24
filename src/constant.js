@@ -71,3 +71,9 @@ export const country = [
   { id: 2, title: '싱가포르', imgSrc: '/singapore.png' },
   { id: 3, title: '캄보디아', imgSrc: '/cambodia.png' },
 ];
+
+// export const room = [
+//   {
+
+//   }
+// ]
