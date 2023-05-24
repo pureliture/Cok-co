@@ -44,15 +44,21 @@ const DetailStay = () => {
       <div
         style={{
           backgroundImage: `url('/spec_guide.png')`,
-          // width: '488px',
-          // height: '253px',
           display: 'flex',
-          // alignItems: 'center',
           justifyContent: 'center',
+          backgroundSize: 'cover',
         }}
       >
-        {/* <div style={{ width: '360px', height: '400px' }}> */}
-        <div
+        <img
+          src="/book_mockup.png"
+          style={{
+            transform: 'rotate(-15deg)',
+            width: '162.99px',
+            height: '221.75px',
+          }}
+          onClick={toggleDrawer}
+        ></img>
+        {/* <div
           style={{
             backgroundColor: 'black',
             transform: 'rotate(-15deg)',
@@ -62,7 +68,7 @@ const DetailStay = () => {
             borderBottomRightRadius: '8px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: 'space-evenly',
           }}
           onClick={toggleDrawer}
         >
@@ -74,8 +80,7 @@ const DetailStay = () => {
             fontSize="14.14px"
             subjectFontSize="9.62px"
           />
-        </div>
-        {/* </div> */}
+        </div> */}
       </div>
       <SpecGuide isOpen={isOpen} toggleDrawer={toggleDrawer} />
       {/* TODO: 추후 삭제하기 */}

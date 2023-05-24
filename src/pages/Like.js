@@ -49,10 +49,10 @@ const Ad = () => {
   );
 };
 
-const Filter = () => {
+const Filter = ({ list }) => {
   return (
     <div className="filter_wrapper">
-      {countryFilter.map((ele, i) => {
+      {list.map((ele, i) => {
         return (
           <div
             className="filter"
@@ -74,7 +74,7 @@ const Like = () => {
       <Header title="좋아요" />
       <Tab />
       <Ad />
-      <Filter />
+      <Filter list={countryFilter} />
       {tabIdx == 0 ? (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div className="like_grid">

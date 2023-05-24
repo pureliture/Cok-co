@@ -214,8 +214,24 @@ const Recommend = ({ locations }) => {
             description="월간 트리픽 매거진 Top5"
           ></Subject>
         </div>
-        <MagazineCard imgSrc={'/magazine_april.png'} />
-        {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        {/* TODO: 이미지 삭제 */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            src="/month_filter.png"
+            style={{ width: '338px', height: '41px' }}
+          />
+        </div>
+        <div style={{ display: 'flex', overflowX: 'scroll' }}>
+          <MagazineCard imgSrc={'/magazine_april.png'} />
+          <MagazineCard imgSrc={'/magazine_may.png'} />
+          {/* <MagazineCard imgSrc={'/magazine_june.png'} /> */}
+          {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <CurationCard
             size="l"
             title="일박에 10만원 퀄리티는 100만원"
@@ -223,6 +239,7 @@ const Recommend = ({ locations }) => {
             bgColor="#EFE6D5"
           />
         </div> */}
+        </div>
       </div>
       <div style={{ margin: '40px 0 50px 0' }}>
         <RadiusRect
