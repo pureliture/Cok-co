@@ -4,11 +4,11 @@ import ProgressBar from 'components/ProgressBar';
 import Question from 'components/Question';
 import RadiusRect from 'components/RadiusRect';
 import Placeholder from 'components/Placeholder';
-import './styles/Step3.css';
 import Rect from 'components/Rect';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'app/hooks';
 import { signUp, selectGender, setNickname } from 'features/signUp/signUp';
+import './styles/Step3.css';
 
 const Step3 = () => {
   const { nickname, countryOfResidence, birthOrDate, gender } = useAppSelector(
@@ -17,10 +17,8 @@ const Step3 = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-  // const disabled = !nickname;
-  const disabled = false;
   const handleClick = () => {
-    if (disabled) {
+    if (!nickname) {
       return;
     }
 
@@ -72,6 +70,7 @@ const Step3 = () => {
               className="user_info_input"
               maxLength={10}
               onChange={nicknameHandleclick}
+              value={nickname}
             ></input>
           </div>
         </RadiusRect>
@@ -186,7 +185,7 @@ const Step3 = () => {
         <Rect
           height="52px"
           text="트리픽 시작하기"
-          disabled={disabled}
+          disabled={!nickname}
           onClick={handleClick}
         />
       </div>
