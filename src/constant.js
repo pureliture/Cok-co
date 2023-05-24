@@ -64,3 +64,10 @@ export const countryFilter = [
   '싱가포르',
   '캄보디아',
 ];
+
+export const country = [
+  { id: 0, title: '라오스', imgSrc: '/laos_s.png' },
+  { id: 1, title: '필리핀', imgSrc: '/philippines.png' },
+  { id: 2, title: '싱가포르', imgSrc: '/singapore.png' },
+  { id: 3, title: '캄보디아', imgSrc: '/cambodia.png' },
+];

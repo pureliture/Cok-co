@@ -9,12 +9,13 @@ import storage from 'redux-persist/lib/storage';
 import { combineReducers } from '@reduxjs/toolkit';
 import persistReducer from 'redux-persist/es/persistReducer';
 import like from 'features/like/like';
+import recommend from 'features/recommend/recommend';
 
 const persistConfig = {
   key: 'root',
   storage: storage,
   whitelist: ['signUp', 'like'],
-  blacklist: ['tasteRoom', 'tasteRegion', 'topBar', 'likeTab'],
+  blacklist: ['tasteRoom', 'tasteRegion', 'topBar', 'likeTab', 'recommend'],
 };
 
 const reducer = combineReducers({
@@ -23,6 +24,7 @@ const reducer = combineReducers({
   tasteRegion: tasteRegion,
   signUp: signUp,
   like: like,
+  recommend: recommend,
   // discovery: discovery
 });
 

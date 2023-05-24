@@ -11,6 +11,8 @@
 .scroll_x {
   display: flex;
   overflow-x: scroll;
+  margin-left: 30px;
+  margin-bottom: 50px;
 }
 
 .scroll_y {

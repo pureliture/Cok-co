@@ -15,7 +15,7 @@ import { useAppSelector } from 'app/hooks';
 
 const Recommend = ({ locations }) => {
   const { nickname } = useAppSelector((state) => state.signUp);
-  const status = useAppSelector((state) => state.like.status);
+  const countryIdx = useAppSelector((state) => state.recommend.countryIdx);
 
   return (
     <div style={{ position: 'relative' }}>
@@ -90,6 +90,7 @@ const Recommend = ({ locations }) => {
         style={{
           backgroundColor: '#F2F2F2',
           borderRadius: '24px',
+          minHeight: '838px',
         }}
       >
         <div style={{ padding: '30px' }}>
@@ -98,36 +99,29 @@ const Recommend = ({ locations }) => {
             description={`${nickname} 님이 떠나고 싶을 ${locations[1]} 숙소 큐레이션`}
           ></Subject>
         </div>
-        <div
-          className="scroll_x"
-          style={{ marginLeft: '30px', marginBottom: '50px' }}
-        >
-          <CountryBtn name="라오스" imgSrc="/laos_s.png" selected={true} />
-          <CountryBtn
-            name="필리핀"
-            imgSrc="/philippines.png"
-            selected={false}
-          />
-          <CountryBtn
-            name="싱가포르"
-            imgSrc="/singapore.png"
-            selected={false}
-          />
-          <CountryBtn name="캄보디아" imgSrc="/cambodia.png" selected={false} />
+        <div className="scroll_x">
+          <CountryBtn id={0} />
+          <CountryBtn id={1} />
+          <CountryBtn id={2} />
+          <CountryBtn id={3} />
         </div>
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            paddingBottom: '20px',
-          }}
-        >
-          <CurationCard size="s" id={0} />
-          <CurationCard size="s" id={1} />
-          <CurationCard size="s" id={2} />
-          <CurationCard size="s" id={3} />
-        </div>
+        {countryIdx === 0 ? (
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              paddingBottom: '20px',
+            }}
+          >
+            <CurationCard size="s" id={0} />
+            <CurationCard size="s" id={1} />
+            <CurationCard size="s" id={2} />
+            <CurationCard size="s" id={3} />
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
       <div style={{ backgroundColor: 'black', position: 'relative' }}>
         <img

@@ -1,24 +1,34 @@
 import { React } from 'react';
 import './styles/CountryBtn.css';
+import { country } from 'constant';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { countrySelected } from 'features/recommend/recommend';
 
-const CountryBtn = ({ name, imgSrc, selected = false }) => {
+const CountryBtn = ({ id }) => {
+  const countryIdx = useAppSelector((state) => state.recommend.countryIdx);
+  const dispatch = useAppDispatch();
+
+  const handleClick = () => {
+    dispatch(countrySelected(id));
+  };
+
   return (
-    <div className="country_btn_wrapper">
+    <div className="country_btn_wrapper" onClick={handleClick}>
       <div
         className="country_btn_img_wrapper"
         style={{
-          border: selected ? '2px solid black' : '',
+          border: id === countryIdx ? '2px solid black' : '',
         }}
       >
-        <img className="country_btn_img" src={imgSrc} />
+        <img className="country_btn_img" src={country[id].imgSrc} />
       </div>
       <div
         className="conutry_btn_name"
         style={{
-          color: selected ? '#1a1a1a' : '#aeaeae',
+          color: id === countryIdx ? '#1a1a1a' : '#aeaeae',
         }}
       >
-        {name}
+        {country[id].title}
       </div>
     </div>
   );
