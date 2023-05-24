@@ -16,6 +16,9 @@ const Step1 = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
+    if (disabled) {
+      return;
+    }
     navigate('/step2');
   };
 
