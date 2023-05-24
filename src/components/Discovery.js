@@ -41,7 +41,7 @@ const DiscoverySwipe = () => {
       </div>
     </SwiperSlide> */}
           <SwiperSlide>
-            <Swiper className="mySwiper">
+            <Swiper>
               <SwiperSlide>
                 <DiscoveryCard
                   imgSrc="/bangkok.png"

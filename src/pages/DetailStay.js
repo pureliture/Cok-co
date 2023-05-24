@@ -43,10 +43,13 @@ const DetailStay = () => {
       />
       <div
         style={{
-          backgroundImage: `url('/spec_guide.png')`,
+          width: '360px',
+          height: '350px',
+          backgroundImage: `url('/book_bg.png')`,
           display: 'flex',
           justifyContent: 'center',
           backgroundSize: 'cover',
+          margin: '40px 0 0 0',
         }}
       >
         <img
@@ -58,35 +61,12 @@ const DetailStay = () => {
           }}
           onClick={toggleDrawer}
         ></img>
-        {/* <div
-          style={{
-            backgroundColor: 'black',
-            transform: 'rotate(-15deg)',
-            width: '160.3px',
-            height: '221.75px',
-            borderTopRightRadius: '8px',
-            borderBottomRightRadius: '8px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-evenly',
-          }}
-          onClick={toggleDrawer}
-        >
-          <Badge />
-          <Subject
-            subject={'섬세한 트리피커들을 위한 \n 4월 업데이트'}
-            description={`가장 따근하고 정확한 \n ${stay[id].title} \n Detail Spec Guide >`}
-            color="white"
-            fontSize="14.14px"
-            subjectFontSize="9.62px"
-          />
-        </div> */}
       </div>
       <SpecGuide isOpen={isOpen} toggleDrawer={toggleDrawer} />
       {/* TODO: 추후 삭제하기 */}
       <img
         src="/map_test.png"
-        style={{ height: '596px', width: '360px', margin: '50px 0' }}
+        style={{ height: '596px', width: '360px', margin: '0 0 50px 0' }}
       />
       <div
         style={{

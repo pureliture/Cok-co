@@ -18,3 +18,8 @@
 .scroll_y {
   overflow-y: scroll;
 }
+
+.magazine_scroll {
+  overflow-x: scroll;
+  margin: 30px 0 0 0;
+}

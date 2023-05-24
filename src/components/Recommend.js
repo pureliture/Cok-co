@@ -207,7 +207,7 @@ const Recommend = ({ locations }) => {
           />
         </div>
       </div>
-      <div style={{ borderRadius: '24px', paddingBottom: '30px' }}>
+      <div style={{ borderRadius: '24px' }}>
         <div style={{ padding: '30px' }}>
           <Subject
             subject={`숙소로 여행가요 \n 꼼꼼한 트리픽커들의 선택`}
@@ -227,21 +227,17 @@ const Recommend = ({ locations }) => {
             style={{ width: '338px', height: '41px' }}
           />
         </div>
-        <div style={{ display: 'flex', overflowX: 'scroll' }}>
-          <MagazineCard imgSrc={'/magazine_april.png'} />
-          <MagazineCard imgSrc={'/magazine_may.png'} />
-          {/* <MagazineCard imgSrc={'/magazine_june.png'} /> */}
-          {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <CurationCard
-            size="l"
-            title="일박에 10만원 퀄리티는 100만원"
-            imgSrc={'/ten_million.png'}
-            bgColor="#EFE6D5"
+        <div
+          className="magazine_scroll"
+          // style={{ overflowX: 'scroll', margin: '30px 0 0 0' }}
+        >
+          <img
+            src="/magazine.png"
+            style={{ width: '956.28px', height: '360px' }}
           />
-        </div> */}
         </div>
       </div>
-      <div style={{ margin: '40px 0 50px 0' }}>
+      <div style={{ margin: '20px 0 50px 0' }}>
         <RadiusRect
           width="360px"
           height="80px"
