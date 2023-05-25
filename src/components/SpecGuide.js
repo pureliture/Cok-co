@@ -18,6 +18,15 @@ const SpecGuide = ({ isOpen, toggleDrawer }) => {
           overflowY: 'scroll',
         }}
       >
+        <div
+          style={{ width: '360px', height: '36px', backgroundColor: '#1A1A1A' }}
+        >
+          <img
+            src="/cross.png"
+            style={{ width: '36px', height: '36px' }}
+            onClick={toggleDrawer}
+          />
+        </div>
         <img
           src="/07_Detail Spec Guide.png"
           style={{ width: '360px', height: '4780px' }}
