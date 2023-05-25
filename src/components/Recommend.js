@@ -49,13 +49,13 @@ const Recommend = ({ locations }) => {
             pagination={{
               clickable: true,
             }}
-            className="mySwiper"
+            // className="mySwiper"
           >
             <SwiperSlide>
               <CurationCard
                 size="l"
                 title={`몰래 알아본 일본 현지인 추천 \n 방안의 자쿠지 15곳`}
-                imgSrc={'/jacuzzi.png'}
+                imgSrc={'/jacuzzi2.png'}
                 bgColor="#EFE6D5"
               />
             </SwiperSlide>
@@ -63,7 +63,7 @@ const Recommend = ({ locations }) => {
               <CurationCard
                 size="l"
                 title={`베란다 문을 열면 퐁당 \n 한국보다 저렴한 동북아 14곳`}
-                imgSrc={'/veranda_moon.png'}
+                imgSrc={'/veranda_moon2.png'}
                 bgColor="#D9EFD5"
               />
             </SwiperSlide>
@@ -71,7 +71,7 @@ const Recommend = ({ locations }) => {
               <CurationCard
                 size="l"
                 title={`바다와 기찻길이 한눈에 보이는 \n 대만의 룸 20곳`}
-                imgSrc={'/sea_and_train_rail.png'}
+                imgSrc={'/sea_and_train_rail2.png'}
                 bgColor="#D5E3EF"
               />
             </SwiperSlide>
@@ -79,7 +79,7 @@ const Recommend = ({ locations }) => {
               <CurationCard
                 size="l"
                 title={`잠들지 않는 밤 \n 화려한 홍콩시티뷰 10곳`}
-                imgSrc={'/night_hongkong.png'}
+                imgSrc={'/night_hongkong2.png'}
                 bgColor="#EFD5D5"
               />
             </SwiperSlide>

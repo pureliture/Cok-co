@@ -21,17 +21,15 @@ const DiscoverySwipe = () => {
     dispatch(setMutedStatus(realIndex + 2));
   };
   const firstRowHandleChange = ({ realIndex }) => {
-    console.log('real', realIndex);
-
+    // console.log('real', realIndex);
     // dispatch(setMutedStatus(realIndex + 0));
   };
   const secondRowHandleChange = ({ realIndex }) => {
-    console.log('real', realIndex);
+    // console.log('real', realIndex);
     // dispatch(setMutedStatus(realIndex + 2));
   };
   const thirdRowHandleChange = ({ realIndex }) => {
-    console.log('real', realIndex);
-
+    // console.log('real', realIndex);
     // dispatch(setMutedStatus(realIndex + 4));
   };
 
